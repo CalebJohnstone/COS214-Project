@@ -1,0 +1,140 @@
+\hypertarget{classDepartmentFactory}{}\section{Department\+Factory Class Reference}
+\label{classDepartmentFactory}\index{Department\+Factory@{Department\+Factory}}
+
+
+{\ttfamily \#include \char`\"{}Team/\+Department/\+Department\+Factory.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Department\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Department\+Factory\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDepartmentFactory_a94d9bd9fa828f2a04f3b89700007befe}{Department\+Factory} (\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$mediator)
+\item 
+\hyperlink{classDepartmentFactory_a8792d28b10841f2f386d20dcda1c419c}{$\sim$\+Department\+Factory} ()
+\item 
+virtual void \hyperlink{classDepartmentFactory_a6080a560efb9fe0b9c870db5a7358886}{create\+Part} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$old\+Part, string season)=0
+\item 
+virtual void \hyperlink{classDepartmentFactory_ad7360e63135822e44031053723ff95fc}{simulation} ()=0
+\item 
+virtual void \hyperlink{classDepartmentFactory_a41e5c96ee84f8237cb08d31cd782efae}{other\+Part\+Changed} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$part)=0
+\item 
+virtual string \hyperlink{classDepartmentFactory_a5aac775b89c4c390ad885e1de8947b0d}{get\+Type} ()=0
+\item 
+int \hyperlink{classDepartmentFactory_a9a7fa0ea7860d17be0f3ef095d28a24e}{get\+Part\+Speed} (\hyperlink{classCar}{Car} $\ast$old\+Part, string part\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDepartmentFactory_ae2ecaffebba359878b08a8c2d5a7bc12}\label{classDepartmentFactory_ae2ecaffebba359878b08a8c2d5a7bc12}} 
+\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$ {\bfseries mediator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pattern\+: Factory Method. This class is the Creator participant. The Concrete\+Creator participants are\+: \hyperlink{classAerodynamicsFactory}{Aerodynamics\+Factory}, \hyperlink{classElectronicsFactory}{Electronics\+Factory}, \hyperlink{classEngineFactory}{Engine\+Factory} and \hyperlink{classChassisFactory}{Chassis\+Factory}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDepartmentFactory_a94d9bd9fa828f2a04f3b89700007befe}\label{classDepartmentFactory_a94d9bd9fa828f2a04f3b89700007befe}} 
+\index{Department\+Factory@{Department\+Factory}!Department\+Factory@{Department\+Factory}}
+\index{Department\+Factory@{Department\+Factory}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{Department\+Factory()}{DepartmentFactory()}}
+{\footnotesize\ttfamily Department\+Factory\+::\+Department\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$}]{mediator }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mediator} & The mediator to which this factory must be attached. The attaching is done here. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDepartmentFactory_a8792d28b10841f2f386d20dcda1c419c}\label{classDepartmentFactory_a8792d28b10841f2f386d20dcda1c419c}} 
+\index{Department\+Factory@{Department\+Factory}!````~Department\+Factory@{$\sim$\+Department\+Factory}}
+\index{````~Department\+Factory@{$\sim$\+Department\+Factory}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{$\sim$\+Department\+Factory()}{~DepartmentFactory()}}
+{\footnotesize\ttfamily Department\+Factory\+::$\sim$\+Department\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classTeam}{Team} is responsible for de-\/allocating the mediator. This destructor does no de-\/allocation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDepartmentFactory_a6080a560efb9fe0b9c870db5a7358886}\label{classDepartmentFactory_a6080a560efb9fe0b9c870db5a7358886}} 
+\index{Department\+Factory@{Department\+Factory}!create\+Part@{create\+Part}}
+\index{create\+Part@{create\+Part}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{create\+Part()}{createPart()}}
+{\footnotesize\ttfamily virtual void Department\+Factory\+::create\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{old\+Part,  }\item[{string}]{season }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Part} & The entry point to the decorated \hyperlink{classCar}{Car} object to which to add a new part \\
+\hline
+{\em season} & \hyperlink{classA}{A} string that is either \char`\"{}current\char`\"{} or \char`\"{}next\char`\"{} to indicate which season the car is for \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAerodynamicsFactory_a2c6e6ce04d21da014e3c0c6affe423ae}{Aerodynamics\+Factory}, \hyperlink{classChassisFactory_aeeb7d210e8c3ca1a3e3b2998705b0d90}{Chassis\+Factory}, \hyperlink{classElectronicsFactory_a6489d0e612615f65d76620585a67ff38}{Electronics\+Factory}, and \hyperlink{classEngineFactory_af8c2f4bf420b5d2f0742b3d38746cf40}{Engine\+Factory}.
+
+\mbox{\Hypertarget{classDepartmentFactory_a9a7fa0ea7860d17be0f3ef095d28a24e}\label{classDepartmentFactory_a9a7fa0ea7860d17be0f3ef095d28a24e}} 
+\index{Department\+Factory@{Department\+Factory}!get\+Part\+Speed@{get\+Part\+Speed}}
+\index{get\+Part\+Speed@{get\+Part\+Speed}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{get\+Part\+Speed()}{getPartSpeed()}}
+{\footnotesize\ttfamily int Department\+Factory\+::get\+Part\+Speed (\begin{DoxyParamCaption}\item[{\hyperlink{classCar}{Car} $\ast$}]{old\+Part,  }\item[{string}]{part\+Type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Part} & The current part that is in the car \\
+\hline
+{\em part\+Type} & The type of part which is produced by this department factory, which is either \char`\"{}\+Aerodynamics\char`\"{}, \char`\"{}\+Electronics\char`\"{}, \char`\"{}\+Engine\char`\"{} or \char`\"{}\+Chassis\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The speed of the current part that is in the car. This is used to be compared with the new part\textquotesingle{}s speed in determining whether or not to add the new part. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDepartmentFactory_a5aac775b89c4c390ad885e1de8947b0d}\label{classDepartmentFactory_a5aac775b89c4c390ad885e1de8947b0d}} 
+\index{Department\+Factory@{Department\+Factory}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual string Department\+Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+The type of department. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAerodynamicsFactory_a3b0af6c00d4a8549164b3d5ec9a1f256}{Aerodynamics\+Factory}, \hyperlink{classChassisFactory_af038789501da489aeccb19520dc09686}{Chassis\+Factory}, \hyperlink{classElectronicsFactory_a494fea1f1a55bca20ce1bb4c988d9d44}{Electronics\+Factory}, and \hyperlink{classEngineFactory_a52fd49ea32ab2dc62aa8c86e058fb138}{Engine\+Factory}.
+
+\mbox{\Hypertarget{classDepartmentFactory_a41e5c96ee84f8237cb08d31cd782efae}\label{classDepartmentFactory_a41e5c96ee84f8237cb08d31cd782efae}} 
+\index{Department\+Factory@{Department\+Factory}!other\+Part\+Changed@{other\+Part\+Changed}}
+\index{other\+Part\+Changed@{other\+Part\+Changed}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{other\+Part\+Changed()}{otherPartChanged()}}
+{\footnotesize\ttfamily virtual void Department\+Factory\+::other\+Part\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & The part that has just been added to the car. This function lets all other departments know that this part has been added. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAerodynamicsFactory_a873e60729f4e8a74608fbf29322cf2f6}{Aerodynamics\+Factory}, \hyperlink{classChassisFactory_a15eb17dfcb995b9dcc75d4908e49a17f}{Chassis\+Factory}, \hyperlink{classElectronicsFactory_ae21ff30f4890eab2474fac71d2615941}{Electronics\+Factory}, and \hyperlink{classEngineFactory_a12c1223834cb2d653a1c659aa1504c51}{Engine\+Factory}.
+
+\mbox{\Hypertarget{classDepartmentFactory_ad7360e63135822e44031053723ff95fc}\label{classDepartmentFactory_ad7360e63135822e44031053723ff95fc}} 
+\index{Department\+Factory@{Department\+Factory}!simulation@{simulation}}
+\index{simulation@{simulation}!Department\+Factory@{Department\+Factory}}
+\subsubsection{\texorpdfstring{simulation()}{simulation()}}
+{\footnotesize\ttfamily virtual void Department\+Factory\+::simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Run a simulation relevant to the part produced by this department factory 
+
+Implemented in \hyperlink{classAerodynamicsFactory_ab8da5b4d88a649174376d08d17503d30}{Aerodynamics\+Factory}, \hyperlink{classChassisFactory_a80d7b3f0cb610967088f6ed89a71b2bb}{Chassis\+Factory}, \hyperlink{classElectronicsFactory_a5e3355480264038e7ec81b83bd73353a}{Electronics\+Factory}, and \hyperlink{classEngineFactory_abcc2b59253cefc7f902a47b19273cf76}{Engine\+Factory}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Team/\+Department/Department\+Factory.\+h\item 
+Team/\+Department/Department\+Factory.\+cpp\end{DoxyCompactItemize}
