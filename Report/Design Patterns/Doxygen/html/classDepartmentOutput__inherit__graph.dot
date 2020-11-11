@@ -1,0 +1,16 @@
+digraph "DepartmentOutput"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="DepartmentOutput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Car",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCar.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Aerodynamics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAerodynamics.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Chassis",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classChassis.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Electronics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classElectronics.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEngine.html"];
+}
