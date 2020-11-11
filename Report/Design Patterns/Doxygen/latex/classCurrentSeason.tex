@@ -1,0 +1,274 @@
+\hypertarget{classCurrentSeason}{}\section{Current\+Season Class Reference}
+\label{classCurrentSeason}\index{Current\+Season@{Current\+Season}}
+
+
+Inheritance diagram for Current\+Season\+:
+% FIG 0
+
+
+Collaboration diagram for Current\+Season\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCurrentSeason_a65af23c148bf8745199232459753955f}{Current\+Season} (string name)
+\item 
+void \hyperlink{classCurrentSeason_a2ae9598222bc7aba71040775c019f297}{add\+Points} (int p)
+\item 
+void \hyperlink{classCurrentSeason_a4828aaa2c0b914b55ebb34c0d1062e8e}{simulate} ()
+\item 
+int \hyperlink{classCurrentSeason_acea90ff7b0349785b189199d76b9a9a0}{get\+Points} ()
+\item 
+int \hyperlink{classCurrentSeason_af605da3db8d851b07265951e5945669c}{calculate\+Speed} ()
+\item 
+virtual void \hyperlink{classCurrentSeason_aae01cbd64006ce4fe60ea337b4f02962}{set\+Race\+Time} (int rt)
+\item 
+virtual void \hyperlink{classCurrentSeason_a58d31e4029253b1c244ee44f0052916f}{increment\+Race\+Time} (int rt)
+\item 
+virtual int \hyperlink{classCurrentSeason_a15328f2c4192d344e970ce111a96946f}{get\+Race\+Time} ()
+\item 
+void \hyperlink{classCurrentSeason_a3ea9de8713c6d2c21202351b036af75f}{set\+Driver} (\hyperlink{classDriver}{Driver} $\ast$d)
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classCurrentSeason_afaed34051750fdd603784e6ea7809075}{clone} ()
+\item 
+string \hyperlink{classCurrentSeason_a3b8912ef6e838fe0a4d735ffc4cd7b66}{get\+Driver\+Name} ()
+\item 
+\hyperlink{classCurrentSeason_a5f5b214667194da480939a33ada4efae}{$\sim$\+Current\+Season} ()
+\item 
+string \hyperlink{classCurrentSeason_abeb85d64969c9fd4945bf64ab0464ccd}{get\+Type} ()
+\item 
+void \hyperlink{classCurrentSeason_a62e6e6c10c5490084230d4c3722196e5}{add\+Tyres} (\hyperlink{classTyre}{Tyre} $\ast$$\ast$t, int num)
+\item 
+void \hyperlink{classCurrentSeason_a4d58f649f43cc8ea8c1e7e0745b7dc1f}{pop\+Old\+Tyre} ()
+\item 
+\hyperlink{classTyre}{Tyre} $\ast$ \hyperlink{classCurrentSeason_a9ea661b3a870ecb22026d9a3c7343a8f}{current\+Tyre} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCurrentSeason_a92f14a563c7bdf84911ed9734893f6c0}\label{classCurrentSeason_a92f14a563c7bdf84911ed9734893f6c0}} 
+int {\bfseries race\+Time}
+\item 
+\mbox{\Hypertarget{classCurrentSeason_aed2ab33910558290b014c07b94fee05f}\label{classCurrentSeason_aed2ab33910558290b014c07b94fee05f}} 
+queue$<$ \hyperlink{classTyre}{Tyre} $\ast$ $>$ {\bfseries tyres}
+\item 
+\mbox{\Hypertarget{classCurrentSeason_a0734273443a0540c94cfa914e2719a4f}\label{classCurrentSeason_a0734273443a0540c94cfa914e2719a4f}} 
+\hyperlink{classDriver}{Driver} $\ast$ {\bfseries driver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCurrentSeason_a65af23c148bf8745199232459753955f}\label{classCurrentSeason_a65af23c148bf8745199232459753955f}} 
+\index{Current\+Season@{Current\+Season}!Current\+Season@{Current\+Season}}
+\index{Current\+Season@{Current\+Season}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{Current\+Season()}{CurrentSeason()}}
+{\footnotesize\ttfamily Current\+Season\+::\+Current\+Season (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+Constructor for a \hyperlink{classCurrentSeason}{Current\+Season} car 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the driver for the team \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurrentSeason_a5f5b214667194da480939a33ada4efae}\label{classCurrentSeason_a5f5b214667194da480939a33ada4efae}} 
+\index{Current\+Season@{Current\+Season}!````~Current\+Season@{$\sim$\+Current\+Season}}
+\index{````~Current\+Season@{$\sim$\+Current\+Season}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{$\sim$\+Current\+Season()}{~CurrentSeason()}}
+{\footnotesize\ttfamily Current\+Season\+::$\sim$\+Current\+Season (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor to deallocate all the memory and points used by the car 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCurrentSeason_a2ae9598222bc7aba71040775c019f297}\label{classCurrentSeason_a2ae9598222bc7aba71040775c019f297}} 
+\index{Current\+Season@{Current\+Season}!add\+Points@{add\+Points}}
+\index{add\+Points@{add\+Points}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{add\+Points()}{addPoints()}}
+{\footnotesize\ttfamily void Current\+Season\+::add\+Points (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to add the points to the driver of the car 
+\begin{DoxyParams}{Parameters}
+{\em p} & The points to be added \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a946872fcdb7625c343e5caf90fa39617}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a62e6e6c10c5490084230d4c3722196e5}\label{classCurrentSeason_a62e6e6c10c5490084230d4c3722196e5}} 
+\index{Current\+Season@{Current\+Season}!add\+Tyres@{add\+Tyres}}
+\index{add\+Tyres@{add\+Tyres}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{add\+Tyres()}{addTyres()}}
+{\footnotesize\ttfamily void Current\+Season\+::add\+Tyres (\begin{DoxyParamCaption}\item[{\hyperlink{classTyre}{Tyre} $\ast$$\ast$}]{t,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to add an array of tyre pointers to the tyre queue 
+\begin{DoxyParams}{Parameters}
+{\em t} & the tyre array to add to the tyre queue \\
+\hline
+{\em num} & the number of tyres to add \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a5c5f22cb9232b88a53a4ffc324824aa1}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_af605da3db8d851b07265951e5945669c}\label{classCurrentSeason_af605da3db8d851b07265951e5945669c}} 
+\index{Current\+Season@{Current\+Season}!calculate\+Speed@{calculate\+Speed}}
+\index{calculate\+Speed@{calculate\+Speed}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{calculate\+Speed()}{calculateSpeed()}}
+{\footnotesize\ttfamily int Current\+Season\+::calculate\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function that recursively runs through all the Concrete Componets of the decorator design pattern and adds their speeds \begin{DoxyReturn}{Returns}
+returns the speed of the car 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_aadb72568edbdf571547ec48e9781237f}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_afaed34051750fdd603784e6ea7809075}\label{classCurrentSeason_afaed34051750fdd603784e6ea7809075}} 
+\index{Current\+Season@{Current\+Season}!clone@{clone}}
+\index{clone@{clone}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Current\+Season\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clone the car and return a car pointer \begin{DoxyReturn}{Returns}
+the cloned car 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCar_a5a54bbfe8e72022f4d9fdf6ecc990d99}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a9ea661b3a870ecb22026d9a3c7343a8f}\label{classCurrentSeason_a9ea661b3a870ecb22026d9a3c7343a8f}} 
+\index{Current\+Season@{Current\+Season}!current\+Tyre@{current\+Tyre}}
+\index{current\+Tyre@{current\+Tyre}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{current\+Tyre()}{currentTyre()}}
+{\footnotesize\ttfamily \hyperlink{classTyre}{Tyre} $\ast$ Current\+Season\+::current\+Tyre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to see and get the tyre at the front of the queue \begin{DoxyReturn}{Returns}
+the tyre at front of Queue 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_aadd6f69cf389b293a5e8a098ebc75f1d}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a3b8912ef6e838fe0a4d735ffc4cd7b66}\label{classCurrentSeason_a3b8912ef6e838fe0a4d735ffc4cd7b66}} 
+\index{Current\+Season@{Current\+Season}!get\+Driver\+Name@{get\+Driver\+Name}}
+\index{get\+Driver\+Name@{get\+Driver\+Name}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{get\+Driver\+Name()}{getDriverName()}}
+{\footnotesize\ttfamily string Current\+Season\+::get\+Driver\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to get the Drivers name from the driver variable \begin{DoxyReturn}{Returns}
+the drivers name as string 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a0192991111c42f7cba809cc9831cd5f3}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_acea90ff7b0349785b189199d76b9a9a0}\label{classCurrentSeason_acea90ff7b0349785b189199d76b9a9a0}} 
+\index{Current\+Season@{Current\+Season}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily int Current\+Season\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to get the drivers points \begin{DoxyReturn}{Returns}
+returns the points of the driver of the car 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a0e0b71dc2b09be094ffb08e5b73c8ea2}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a15328f2c4192d344e970ce111a96946f}\label{classCurrentSeason_a15328f2c4192d344e970ce111a96946f}} 
+\index{Current\+Season@{Current\+Season}!get\+Race\+Time@{get\+Race\+Time}}
+\index{get\+Race\+Time@{get\+Race\+Time}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{get\+Race\+Time()}{getRaceTime()}}
+{\footnotesize\ttfamily int Current\+Season\+::get\+Race\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the cars race\+Time \begin{DoxyReturn}{Returns}
+return the race\+Time an int of the car 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_ac30e13eba209c1ca3bba99bf6741094a}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_abeb85d64969c9fd4945bf64ab0464ccd}\label{classCurrentSeason_abeb85d64969c9fd4945bf64ab0464ccd}} 
+\index{Current\+Season@{Current\+Season}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Current\+Season\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type which is base, used by decorator \begin{DoxyReturn}{Returns}
+string "base 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCar_ae502eb1c04753317ebdb759497fd030c}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a58d31e4029253b1c244ee44f0052916f}\label{classCurrentSeason_a58d31e4029253b1c244ee44f0052916f}} 
+\index{Current\+Season@{Current\+Season}!increment\+Race\+Time@{increment\+Race\+Time}}
+\index{increment\+Race\+Time@{increment\+Race\+Time}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{increment\+Race\+Time()}{incrementRaceTime()}}
+{\footnotesize\ttfamily void Current\+Season\+::increment\+Race\+Time (\begin{DoxyParamCaption}\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to increase the race\+Time of the car by rt 
+\begin{DoxyParams}{Parameters}
+{\em rt} & increase race time variable by rt \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a3944276e317e680a756ac58e7bac6e6f}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a4d58f649f43cc8ea8c1e7e0745b7dc1f}\label{classCurrentSeason_a4d58f649f43cc8ea8c1e7e0745b7dc1f}} 
+\index{Current\+Season@{Current\+Season}!pop\+Old\+Tyre@{pop\+Old\+Tyre}}
+\index{pop\+Old\+Tyre@{pop\+Old\+Tyre}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{pop\+Old\+Tyre()}{popOldTyre()}}
+{\footnotesize\ttfamily void Current\+Season\+::pop\+Old\+Tyre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to change the tyre by popping the tyre at the front of the queue 
+
+Reimplemented from \hyperlink{classCar_a5859a9475be0c26341ca4f3acf23a2ea}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a3ea9de8713c6d2c21202351b036af75f}\label{classCurrentSeason_a3ea9de8713c6d2c21202351b036af75f}} 
+\index{Current\+Season@{Current\+Season}!set\+Driver@{set\+Driver}}
+\index{set\+Driver@{set\+Driver}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{set\+Driver()}{setDriver()}}
+{\footnotesize\ttfamily void Current\+Season\+::set\+Driver (\begin{DoxyParamCaption}\item[{\hyperlink{classDriver}{Driver} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the driver of the car 
+\begin{DoxyParams}{Parameters}
+{\em d} & the driver pointer to be set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_ad7148bd1abe107ce2e2b134f78582c9d}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_aae01cbd64006ce4fe60ea337b4f02962}\label{classCurrentSeason_aae01cbd64006ce4fe60ea337b4f02962}} 
+\index{Current\+Season@{Current\+Season}!set\+Race\+Time@{set\+Race\+Time}}
+\index{set\+Race\+Time@{set\+Race\+Time}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{set\+Race\+Time()}{setRaceTime()}}
+{\footnotesize\ttfamily void Current\+Season\+::set\+Race\+Time (\begin{DoxyParamCaption}\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function to set the race\+Time of the car 
+\begin{DoxyParams}{Parameters}
+{\em rt} & the race\+Time of the car \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a72a79de673e860c1f177791bee87c529}{Car}.
+
+\mbox{\Hypertarget{classCurrentSeason_a4828aaa2c0b914b55ebb34c0d1062e8e}\label{classCurrentSeason_a4828aaa2c0b914b55ebb34c0d1062e8e}} 
+\index{Current\+Season@{Current\+Season}!simulate@{simulate}}
+\index{simulate@{simulate}!Current\+Season@{Current\+Season}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Current\+Season\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function that lets the drivers gain experience 
+
+Reimplemented from \hyperlink{classCar_af2532d9bbcda730f936f9633d8ee8d71}{Car}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car/\+Current\+Season/Current\+Season.\+h\item 
+Car/\+Current\+Season/Current\+Season.\+cpp\end{DoxyCompactItemize}

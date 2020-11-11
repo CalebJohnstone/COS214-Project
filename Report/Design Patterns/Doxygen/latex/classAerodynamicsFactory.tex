@@ -1,0 +1,145 @@
+\hypertarget{classAerodynamicsFactory}{}\section{Aerodynamics\+Factory Class Reference}
+\label{classAerodynamicsFactory}\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+
+
+{\ttfamily \#include \char`\"{}Team/\+Department/\+Aerodynamics\+Factory.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Aerodynamics\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Aerodynamics\+Factory\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAerodynamicsFactory_a46f12bf52bad9b98d19f6dcd3a04c384}{Aerodynamics\+Factory} (\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$mediator)
+\item 
+void \hyperlink{classAerodynamicsFactory_a2c6e6ce04d21da014e3c0c6affe423ae}{create\+Part} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$old\+Part, string season)
+\item 
+void \hyperlink{classAerodynamicsFactory_ab8da5b4d88a649174376d08d17503d30}{simulation} ()
+\item 
+void \hyperlink{classAerodynamicsFactory_a873e60729f4e8a74608fbf29322cf2f6}{other\+Part\+Changed} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$part)
+\item 
+int \hyperlink{classAerodynamicsFactory_a687a3fcb4eeabf97d8c024cfb63406e5}{get\+Tunnel\+Tokens} ()
+\item 
+void \hyperlink{classAerodynamicsFactory_a244210a6b33080c3426d486d09187717}{decrease\+Tunnel\+Tokens} ()
+\item 
+string \hyperlink{classAerodynamicsFactory_a3b0af6c00d4a8549164b3d5ec9a1f256}{get\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classAerodynamicsFactory_a3bfc0efb95b639e586eaa0a45f91fa2b}{wind\+Tunnel} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAerodynamicsFactory_abf6b57457735cfc29c3910bcb3c3299e}\label{classAerodynamicsFactory_abf6b57457735cfc29c3910bcb3c3299e}} 
+int {\bfseries wind\+Tokens}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class that represents the \hyperlink{classAerodynamics}{Aerodynamics} Department. This department produces the \hyperlink{classAerodynamics}{Aerodynamics} part and tests the part using the wind\+Tunnel 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAerodynamicsFactory_a46f12bf52bad9b98d19f6dcd3a04c384}\label{classAerodynamicsFactory_a46f12bf52bad9b98d19f6dcd3a04c384}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{Aerodynamics\+Factory()}{AerodynamicsFactory()}}
+{\footnotesize\ttfamily Aerodynamics\+Factory\+::\+Aerodynamics\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$}]{mediator }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mediator} & The mediator to which this factory must be attached. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAerodynamicsFactory_a2c6e6ce04d21da014e3c0c6affe423ae}\label{classAerodynamicsFactory_a2c6e6ce04d21da014e3c0c6affe423ae}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!create\+Part@{create\+Part}}
+\index{create\+Part@{create\+Part}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{create\+Part()}{createPart()}}
+{\footnotesize\ttfamily void Aerodynamics\+Factory\+::create\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{old\+Part,  }\item[{string}]{season }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Part} & The entry point to the decorated \hyperlink{classCar}{Car} object to which to add a new part \\
+\hline
+{\em season} & \hyperlink{classA}{A} string that is either \char`\"{}current\char`\"{} or \char`\"{}next\char`\"{} to indicate which season the car is for \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDepartmentFactory_a6080a560efb9fe0b9c870db5a7358886}{Department\+Factory}.
+
+\mbox{\Hypertarget{classAerodynamicsFactory_a244210a6b33080c3426d486d09187717}\label{classAerodynamicsFactory_a244210a6b33080c3426d486d09187717}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!decrease\+Tunnel\+Tokens@{decrease\+Tunnel\+Tokens}}
+\index{decrease\+Tunnel\+Tokens@{decrease\+Tunnel\+Tokens}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{decrease\+Tunnel\+Tokens()}{decreaseTunnelTokens()}}
+{\footnotesize\ttfamily void Aerodynamics\+Factory\+::decrease\+Tunnel\+Tokens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decreases the number of wind tunnel tokens left for the \hyperlink{classTeam}{Team} when this department uses the wind tunnel. \mbox{\Hypertarget{classAerodynamicsFactory_a687a3fcb4eeabf97d8c024cfb63406e5}\label{classAerodynamicsFactory_a687a3fcb4eeabf97d8c024cfb63406e5}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!get\+Tunnel\+Tokens@{get\+Tunnel\+Tokens}}
+\index{get\+Tunnel\+Tokens@{get\+Tunnel\+Tokens}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{get\+Tunnel\+Tokens()}{getTunnelTokens()}}
+{\footnotesize\ttfamily int Aerodynamics\+Factory\+::get\+Tunnel\+Tokens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The current number of wind tunnel tokens left for the \hyperlink{classTeam}{Team}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAerodynamicsFactory_a3b0af6c00d4a8549164b3d5ec9a1f256}\label{classAerodynamicsFactory_a3b0af6c00d4a8549164b3d5ec9a1f256}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Aerodynamics\+Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+The type of department which is \char`\"{}\+Aerodynamics\char`\"{} in this case. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDepartmentFactory_a5aac775b89c4c390ad885e1de8947b0d}{Department\+Factory}.
+
+\mbox{\Hypertarget{classAerodynamicsFactory_a873e60729f4e8a74608fbf29322cf2f6}\label{classAerodynamicsFactory_a873e60729f4e8a74608fbf29322cf2f6}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!other\+Part\+Changed@{other\+Part\+Changed}}
+\index{other\+Part\+Changed@{other\+Part\+Changed}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{other\+Part\+Changed()}{otherPartChanged()}}
+{\footnotesize\ttfamily void Aerodynamics\+Factory\+::other\+Part\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & The part that has just been added to the car. This function lets all other departments know that this part has been added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDepartmentFactory_a41e5c96ee84f8237cb08d31cd782efae}{Department\+Factory}.
+
+\mbox{\Hypertarget{classAerodynamicsFactory_ab8da5b4d88a649174376d08d17503d30}\label{classAerodynamicsFactory_ab8da5b4d88a649174376d08d17503d30}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!simulation@{simulation}}
+\index{simulation@{simulation}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{simulation()}{simulation()}}
+{\footnotesize\ttfamily void Aerodynamics\+Factory\+::simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Run a simulation of the wind patterns and weather conditions for the day so that the driver can become familiar with these. 
+
+Implements \hyperlink{classDepartmentFactory_ad7360e63135822e44031053723ff95fc}{Department\+Factory}.
+
+\mbox{\Hypertarget{classAerodynamicsFactory_a3bfc0efb95b639e586eaa0a45f91fa2b}\label{classAerodynamicsFactory_a3bfc0efb95b639e586eaa0a45f91fa2b}} 
+\index{Aerodynamics\+Factory@{Aerodynamics\+Factory}!wind\+Tunnel@{wind\+Tunnel}}
+\index{wind\+Tunnel@{wind\+Tunnel}!Aerodynamics\+Factory@{Aerodynamics\+Factory}}
+\subsubsection{\texorpdfstring{wind\+Tunnel()}{windTunnel()}}
+{\footnotesize\ttfamily int Aerodynamics\+Factory\+::wind\+Tunnel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Uses the wind tunnel to test the aerodynamics performance of the new \hyperlink{classAerodynamics}{Aerodynamics} part. The wind tunnel can only be used if the \hyperlink{classTeam}{Team} has at least one wind tunnel token left. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Team/\+Department/Aerodynamics\+Factory.\+h\item 
+Team/\+Department/Aerodynamics\+Factory.\+cpp\end{DoxyCompactItemize}

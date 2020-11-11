@@ -1,0 +1,82 @@
+\hypertarget{classChassis}{}\section{Chassis Class Reference}
+\label{classChassis}\index{Chassis@{Chassis}}
+
+
+{\ttfamily \#include \char`\"{}Car/\+Parts/\+Chassis.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Chassis\+:
+% FIG 0
+
+
+Collaboration diagram for Chassis\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChassis_abff4a95e18eea726bccbb647939b2141}{Chassis} ()
+\item 
+\hyperlink{classChassis}{Chassis} $\ast$ \hyperlink{classChassis_a75bfca11337766c0dda9544f27987d18}{cpy} ()
+\item 
+int \hyperlink{classChassis_a095c63aa079ebd8d7fc04f238fd1e56c}{get\+Speed} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classChassis_a2700ee5437760643c7cad46e077dcbcd}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} class \hyperlink{classAerodynamics}{Aerodynamics} that is a concrete\+Decorator of the decorator design pattern,concrete\+Product of the Factory method 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChassis_abff4a95e18eea726bccbb647939b2141}\label{classChassis_abff4a95e18eea726bccbb647939b2141}} 
+\index{Chassis@{Chassis}!Chassis@{Chassis}}
+\index{Chassis@{Chassis}!Chassis@{Chassis}}
+\subsubsection{\texorpdfstring{Chassis()}{Chassis()}}
+{\footnotesize\ttfamily Chassis\+::\+Chassis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor to create a \hyperlink{classChassis}{Chassis} object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classChassis_a2700ee5437760643c7cad46e077dcbcd}\label{classChassis_a2700ee5437760643c7cad46e077dcbcd}} 
+\index{Chassis@{Chassis}!clone@{clone}}
+\index{clone@{clone}!Chassis@{Chassis}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Chassis\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clone function to copy and create a new \hyperlink{classCar}{Car} object to match the current chassis attributes,method of the prototype design pattern \begin{DoxyReturn}{Returns}
+\hyperlink{classA}{A} \hyperlink{classChassis}{Chassis} object 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}{Department\+Output}.
+
+\mbox{\Hypertarget{classChassis_a75bfca11337766c0dda9544f27987d18}\label{classChassis_a75bfca11337766c0dda9544f27987d18}} 
+\index{Chassis@{Chassis}!cpy@{cpy}}
+\index{cpy@{cpy}!Chassis@{Chassis}}
+\subsubsection{\texorpdfstring{cpy()}{cpy()}}
+{\footnotesize\ttfamily \hyperlink{classChassis}{Chassis} $\ast$ Chassis\+::cpy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Helper function used by clone \begin{DoxyReturn}{Returns}
+\hyperlink{classChassis}{Chassis} pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChassis_a095c63aa079ebd8d7fc04f238fd1e56c}\label{classChassis_a095c63aa079ebd8d7fc04f238fd1e56c}} 
+\index{Chassis@{Chassis}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Chassis@{Chassis}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Chassis\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the objects speed \begin{DoxyReturn}{Returns}
+int the speed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}{Department\+Output}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car/\+Parts/Chassis.\+h\item 
+Car/\+Parts/Chassis.\+cpp\end{DoxyCompactItemize}

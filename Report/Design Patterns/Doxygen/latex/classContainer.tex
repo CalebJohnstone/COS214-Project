@@ -1,0 +1,86 @@
+\hypertarget{classContainer}{}\section{Container Class Reference}
+\label{classContainer}\index{Container@{Container}}
+
+
+{\ttfamily \#include \char`\"{}Team/\+Transport/\+Container/\+Container.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Container\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}{Container} ()
+\item 
+virtual \hyperlink{classContainer_ae9f5d07bfc3defda274aa06091c19f56}{$\sim$\+Container} ()
+\item 
+virtual void \hyperlink{classContainer_a0056752dea3f0d49dc085b0284d86ec5}{print} ()=0
+\item 
+void \hyperlink{classContainer_a9bba4330d6f63a7696f6932819177cac}{set\+Is\+Box} (bool b)
+\item 
+bool \hyperlink{classContainer_a6b312784119e05843e1b4c4393054d77}{get\+Is\+Box} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classContainer_a7ba7e06f1e8e78b34c53f68cd2672a85}\label{classContainer_a7ba7e06f1e8e78b34c53f68cd2672a85}} 
+bool {\bfseries is\+Box}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} class \hyperlink{classContainer}{Container} that is the Component of the Composite design pattern. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}\label{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}} 
+\index{Container@{Container}!Container@{Container}}
+\index{Container@{Container}!Container@{Container}}
+\subsubsection{\texorpdfstring{Container()}{Container()}}
+{\footnotesize\ttfamily Container\+::\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor to create the container object \mbox{\Hypertarget{classContainer_ae9f5d07bfc3defda274aa06091c19f56}\label{classContainer_ae9f5d07bfc3defda274aa06091c19f56}} 
+\index{Container@{Container}!````~Container@{$\sim$\+Container}}
+\index{````~Container@{$\sim$\+Container}!Container@{Container}}
+\subsubsection{\texorpdfstring{$\sim$\+Container()}{~Container()}}
+{\footnotesize\ttfamily Container\+::$\sim$\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor to destroy the container object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContainer_a6b312784119e05843e1b4c4393054d77}\label{classContainer_a6b312784119e05843e1b4c4393054d77}} 
+\index{Container@{Container}!get\+Is\+Box@{get\+Is\+Box}}
+\index{get\+Is\+Box@{get\+Is\+Box}!Container@{Container}}
+\subsubsection{\texorpdfstring{get\+Is\+Box()}{getIsBox()}}
+{\footnotesize\ttfamily bool Container\+::get\+Is\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function that returns the boxes is\+Box varaible \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContainer_a0056752dea3f0d49dc085b0284d86ec5}\label{classContainer_a0056752dea3f0d49dc085b0284d86ec5}} 
+\index{Container@{Container}!print@{print}}
+\index{print@{print}!Container@{Container}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Container\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Function to print the contents of the container 
+
+Implemented in \hyperlink{classBox_a7f9cef3d9324289ae0fb4ec1aa50db9d}{Box}, and \hyperlink{classEquipment_a78d184209461b59fe23dabe8f9325dfe}{Equipment}.
+
+\mbox{\Hypertarget{classContainer_a9bba4330d6f63a7696f6932819177cac}\label{classContainer_a9bba4330d6f63a7696f6932819177cac}} 
+\index{Container@{Container}!set\+Is\+Box@{set\+Is\+Box}}
+\index{set\+Is\+Box@{set\+Is\+Box}!Container@{Container}}
+\subsubsection{\texorpdfstring{set\+Is\+Box()}{setIsBox()}}
+{\footnotesize\ttfamily void Container\+::set\+Is\+Box (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+Function that sets the boxes is\+Box variable 
+\begin{DoxyParams}{Parameters}
+{\em b} & takes a boolean as parampter \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Team/\+Transport/\+Container/Container.\+h\item 
+Team/\+Transport/\+Container/Container.\+cpp\end{DoxyCompactItemize}

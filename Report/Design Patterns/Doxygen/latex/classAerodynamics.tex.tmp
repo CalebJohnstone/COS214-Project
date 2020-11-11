@@ -1,0 +1,82 @@
+\hypertarget{classAerodynamics}{}\section{Aerodynamics Class Reference}
+\label{classAerodynamics}\index{Aerodynamics@{Aerodynamics}}
+
+
+{\ttfamily \#include \char`\"{}Car/\+Parts/\+Aerodynamics.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Aerodynamics\+:
+% FIG 0
+
+
+Collaboration diagram for Aerodynamics\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAerodynamics_a36c7ae850ce18605cdbf3ce1709d8e54}{Aerodynamics} ()
+\item 
+\hyperlink{classAerodynamics}{Aerodynamics} $\ast$ \hyperlink{classAerodynamics_a5a9e9851573f3604944cec42cdf049df}{cpy} ()
+\item 
+int \hyperlink{classAerodynamics_aeee4abded0da2a826af0f3a4c0cdf991}{get\+Speed} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classAerodynamics_abbd7bb0e8186e3d86b8baf7a72aeb63e}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} class \hyperlink{classAerodynamics}{Aerodynamics} that is a concrete\+Decorator of the decorator design pattern,concrete\+Product of the Factory method 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAerodynamics_a36c7ae850ce18605cdbf3ce1709d8e54}\label{classAerodynamics_a36c7ae850ce18605cdbf3ce1709d8e54}} 
+\index{Aerodynamics@{Aerodynamics}!Aerodynamics@{Aerodynamics}}
+\index{Aerodynamics@{Aerodynamics}!Aerodynamics@{Aerodynamics}}
+\subsubsection{\texorpdfstring{Aerodynamics()}{Aerodynamics()}}
+{\footnotesize\ttfamily Aerodynamics\+::\+Aerodynamics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor to create an \hyperlink{classAerodynamics}{Aerodynamics} object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAerodynamics_abbd7bb0e8186e3d86b8baf7a72aeb63e}\label{classAerodynamics_abbd7bb0e8186e3d86b8baf7a72aeb63e}} 
+\index{Aerodynamics@{Aerodynamics}!clone@{clone}}
+\index{clone@{clone}!Aerodynamics@{Aerodynamics}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Aerodynamics\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clones the objects variables \begin{DoxyReturn}{Returns}
+a \hyperlink{classAerodynamics}{Aerodynamics} object method of the prototype design pattern 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}{Department\+Output}.
+
+\mbox{\Hypertarget{classAerodynamics_a5a9e9851573f3604944cec42cdf049df}\label{classAerodynamics_a5a9e9851573f3604944cec42cdf049df}} 
+\index{Aerodynamics@{Aerodynamics}!cpy@{cpy}}
+\index{cpy@{cpy}!Aerodynamics@{Aerodynamics}}
+\subsubsection{\texorpdfstring{cpy()}{cpy()}}
+{\footnotesize\ttfamily \hyperlink{classAerodynamics}{Aerodynamics} $\ast$ Aerodynamics\+::cpy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Helper function used in cloning \begin{DoxyReturn}{Returns}
+\hyperlink{classAerodynamics}{Aerodynamics} pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAerodynamics_aeee4abded0da2a826af0f3a4c0cdf991}\label{classAerodynamics_aeee4abded0da2a826af0f3a4c0cdf991}} 
+\index{Aerodynamics@{Aerodynamics}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Aerodynamics@{Aerodynamics}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Aerodynamics\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the speed of an \hyperlink{classAerodynamics}{Aerodynamics} object \begin{DoxyReturn}{Returns}
+int the speed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}{Department\+Output}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car/\+Parts/Aerodynamics.\+h\item 
+Car/\+Parts/Aerodynamics.\+cpp\end{DoxyCompactItemize}
