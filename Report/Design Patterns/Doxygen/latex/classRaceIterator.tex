@@ -1,0 +1,101 @@
+\hypertarget{classRaceIterator}{}\section{Race\+Iterator Class Reference}
+\label{classRaceIterator}\index{Race\+Iterator@{Race\+Iterator}}
+
+
+{\ttfamily \#include \char`\"{}Season/\+Race\+Iterator.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Race\+Iterator\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRaceIterator_a9610179f3d991dc1611574451d7306ea}{Race\+Iterator} (\hyperlink{classRace}{Race} $\ast$$\ast$races, int length)
+\item 
+\hyperlink{classRaceIterator_a38882308a5d81320ee9c04f783076555}{$\sim$\+Race\+Iterator} ()
+\item 
+void \hyperlink{classRaceIterator_abfb9e2f16da89b19285414181d6bc7c0}{first} ()
+\item 
+void \hyperlink{classRaceIterator_ae2a022fadedd9f0c51f9b3f8f994985f}{next} ()
+\item 
+bool \hyperlink{classRaceIterator_a406ce41eae09904a94502f80344f537d}{is\+Done} ()
+\item 
+\hyperlink{classRace}{Race} $\ast$ \hyperlink{classRaceIterator_adceb8655316b9b0ca00dbe4494ece887}{current\+Item} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRaceIterator_adf792f29e2d02d2278bc512f1f28a60c}\label{classRaceIterator_adf792f29e2d02d2278bc512f1f28a60c}} 
+\hyperlink{classRace}{Race} $\ast$$\ast$ {\bfseries races}
+\item 
+\mbox{\Hypertarget{classRaceIterator_afed19ccd046f532c72861bc8f5b7b23d}\label{classRaceIterator_afed19ccd046f532c72861bc8f5b7b23d}} 
+int {\bfseries length}
+\item 
+\mbox{\Hypertarget{classRaceIterator_a8830cf0c06ea4f0ced93860766841dda}\label{classRaceIterator_a8830cf0c06ea4f0ced93860766841dda}} 
+int {\bfseries current}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} class that is the concrete iterator for the iterator design pattern 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRaceIterator_a9610179f3d991dc1611574451d7306ea}\label{classRaceIterator_a9610179f3d991dc1611574451d7306ea}} 
+\index{Race\+Iterator@{Race\+Iterator}!Race\+Iterator@{Race\+Iterator}}
+\index{Race\+Iterator@{Race\+Iterator}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{Race\+Iterator()}{RaceIterator()}}
+{\footnotesize\ttfamily Race\+Iterator\+::\+Race\+Iterator (\begin{DoxyParamCaption}\item[{\hyperlink{classRace}{Race} $\ast$$\ast$}]{races,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Constructor that takes an array of race pointers and the size of the array as parampters 
+\begin{DoxyParams}{Parameters}
+{\em races} & race pointers \\
+\hline
+{\em length} & size of race array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRaceIterator_a38882308a5d81320ee9c04f783076555}\label{classRaceIterator_a38882308a5d81320ee9c04f783076555}} 
+\index{Race\+Iterator@{Race\+Iterator}!````~Race\+Iterator@{$\sim$\+Race\+Iterator}}
+\index{````~Race\+Iterator@{$\sim$\+Race\+Iterator}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{$\sim$\+Race\+Iterator()}{~RaceIterator()}}
+{\footnotesize\ttfamily Race\+Iterator\+::$\sim$\+Race\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor to deallocate the races 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRaceIterator_adceb8655316b9b0ca00dbe4494ece887}\label{classRaceIterator_adceb8655316b9b0ca00dbe4494ece887}} 
+\index{Race\+Iterator@{Race\+Iterator}!current\+Item@{current\+Item}}
+\index{current\+Item@{current\+Item}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{current\+Item()}{currentItem()}}
+{\footnotesize\ttfamily \hyperlink{classRace}{Race} $\ast$ Race\+Iterator\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the item at the current index \begin{DoxyReturn}{Returns}
+\hyperlink{classRace}{Race} pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRaceIterator_abfb9e2f16da89b19285414181d6bc7c0}\label{classRaceIterator_abfb9e2f16da89b19285414181d6bc7c0}} 
+\index{Race\+Iterator@{Race\+Iterator}!first@{first}}
+\index{first@{first}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily void Race\+Iterator\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to move the index to the first race \mbox{\Hypertarget{classRaceIterator_a406ce41eae09904a94502f80344f537d}\label{classRaceIterator_a406ce41eae09904a94502f80344f537d}} 
+\index{Race\+Iterator@{Race\+Iterator}!is\+Done@{is\+Done}}
+\index{is\+Done@{is\+Done}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{is\+Done()}{isDone()}}
+{\footnotesize\ttfamily bool Race\+Iterator\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to check if the index can be moved further along the array \begin{DoxyReturn}{Returns}
+true if can move false if index at end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRaceIterator_ae2a022fadedd9f0c51f9b3f8f994985f}\label{classRaceIterator_ae2a022fadedd9f0c51f9b3f8f994985f}} 
+\index{Race\+Iterator@{Race\+Iterator}!next@{next}}
+\index{next@{next}!Race\+Iterator@{Race\+Iterator}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void Race\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to move the index one along the array 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Season/Race\+Iterator.\+h\item 
+Season/Race\+Iterator.\+cpp\end{DoxyCompactItemize}

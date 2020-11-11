@@ -1,0 +1,184 @@
+\hypertarget{classTeam}{}\section{Team Class Reference}
+\label{classTeam}\index{Team@{Team}}
+
+
+{\ttfamily \#include \char`\"{}Team/\+Team.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Team\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTeam_acb3e8e4707763829d17d70b26deaee34}{Team} (string string\+\_\+name, string driver1\+Name, string driver2\+Name)
+\item 
+\hyperlink{classTeam_ab4218fddd612d52bab47bec4feeb49de}{$\sim$\+Team} ()
+\item 
+void \hyperlink{classTeam_a21681f514dea00fe6bca432ef64eab1e}{transport} ()
+\item 
+void \hyperlink{classTeam_a6bf3c6839b7d2e4b38fbb160c41a40ab}{order\+Tyres} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$$\ast$ \hyperlink{classTeam_a8e71e64acc74a3346e373dde33f08233}{get\+Current\+Season\+Cars} ()
+\item 
+void \hyperlink{classTeam_a1fad6776814f2caf74088ee644435ae1}{set\+European\+Strategy} ()
+\item 
+void \hyperlink{classTeam_a0eb5e6b897c90aa5026be4a0822c9fa5}{set\+Non\+European\+Strategy} ()
+\item 
+string \hyperlink{classTeam_ab21736a411213da36d08210e570ecbeb}{get\+Name} ()
+\item 
+void \hyperlink{classTeam_add32843daa734d808b93e5a9793b158a}{part\+Changed} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$part, string season)
+\item 
+void \hyperlink{classTeam_a013d81d7848893aef82a0e701b26777c}{update\+Points} ()
+\item 
+void \hyperlink{classTeam_adc73729b63d1a52595c60f9e29d6e429}{upgrade\+And\+Simulate} ()
+\item 
+void \hyperlink{classTeam_aedf4b8a3cd9edb5349b2b1d7dd965a2f}{upgrade\+Next\+Season} ()
+\item 
+int \hyperlink{classTeam_ab34663d641e1fee1e3d924b8e0f17eb9}{get\+Constructor\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTeam_a3ac0bc2f7b4448ad19877b500ad2109b}\label{classTeam_a3ac0bc2f7b4448ad19877b500ad2109b}} 
+\hyperlink{classCar}{Car} $\ast$$\ast$ {\bfseries current\+Cars}
+\item 
+\mbox{\Hypertarget{classTeam_a280846f18ee644e8f07c9512cf104ba4}\label{classTeam_a280846f18ee644e8f07c9512cf104ba4}} 
+\hyperlink{classContainer}{Container} $\ast$ {\bfseries container}
+\item 
+\mbox{\Hypertarget{classTeam_aeae51e4ff579869875a133b06ac34b17}\label{classTeam_aeae51e4ff579869875a133b06ac34b17}} 
+\hyperlink{classTransportStrategy}{Transport\+Strategy} $\ast$ {\bfseries transport\+Strategy}
+\item 
+\mbox{\Hypertarget{classTeam_a212a9dc5c5a848243a58dc8f2a0176e3}\label{classTeam_a212a9dc5c5a848243a58dc8f2a0176e3}} 
+\hyperlink{classDepartmentFactory}{Department\+Factory} $\ast$$\ast$ {\bfseries departments}
+\item 
+\mbox{\Hypertarget{classTeam_abca0ac315f8fb0cb636769b7861f0499}\label{classTeam_abca0ac315f8fb0cb636769b7861f0499}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classTeam_a0a53b08f463f9e4efcfebbad77c6395b}\label{classTeam_a0a53b08f463f9e4efcfebbad77c6395b}} 
+\hyperlink{classDepartmentMediator}{Department\+Mediator} $\ast$ {\bfseries mediator}
+\item 
+\mbox{\Hypertarget{classTeam_a340b64e10e2798908300461f235b9cd1}\label{classTeam_a340b64e10e2798908300461f235b9cd1}} 
+int {\bfseries constructor\+Points}
+\item 
+\mbox{\Hypertarget{classTeam_a8ffeb82cd0eab84dbc97982e5b1c3085}\label{classTeam_a8ffeb82cd0eab84dbc97982e5b1c3085}} 
+\hyperlink{classCar}{Car} $\ast$ {\bfseries next\+Season\+Car}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a single team in an F1 season. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTeam_acb3e8e4707763829d17d70b26deaee34}\label{classTeam_acb3e8e4707763829d17d70b26deaee34}} 
+\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\subsubsection{\texorpdfstring{Team()}{Team()}}
+{\footnotesize\ttfamily Team\+::\+Team (\begin{DoxyParamCaption}\item[{string}]{string\+\_\+name,  }\item[{string}]{driver1\+Name,  }\item[{string}]{driver2\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+name} & The name of the team. \\
+\hline
+{\em driver1\+Name} & The name of the team\textquotesingle{}s first driver. \\
+\hline
+{\em driver2\+Name} & The name of the team\textquotesingle{}s second driver. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTeam_ab4218fddd612d52bab47bec4feeb49de}\label{classTeam_ab4218fddd612d52bab47bec4feeb49de}} 
+\index{Team@{Team}!````~Team@{$\sim$\+Team}}
+\index{````~Team@{$\sim$\+Team}!Team@{Team}}
+\subsubsection{\texorpdfstring{$\sim$\+Team()}{~Team()}}
+{\footnotesize\ttfamily Team\+::$\sim$\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys the team and its cars and departments. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTeam_ab34663d641e1fee1e3d924b8e0f17eb9}\label{classTeam_ab34663d641e1fee1e3d924b8e0f17eb9}} 
+\index{Team@{Team}!get\+Constructor\+Points@{get\+Constructor\+Points}}
+\index{get\+Constructor\+Points@{get\+Constructor\+Points}!Team@{Team}}
+\subsubsection{\texorpdfstring{get\+Constructor\+Points()}{getConstructorPoints()}}
+{\footnotesize\ttfamily int Team\+::get\+Constructor\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the team\textquotesingle{}s current constructor point tally. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTeam_a8e71e64acc74a3346e373dde33f08233}\label{classTeam_a8e71e64acc74a3346e373dde33f08233}} 
+\index{Team@{Team}!get\+Current\+Season\+Cars@{get\+Current\+Season\+Cars}}
+\index{get\+Current\+Season\+Cars@{get\+Current\+Season\+Cars}!Team@{Team}}
+\subsubsection{\texorpdfstring{get\+Current\+Season\+Cars()}{getCurrentSeasonCars()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$$\ast$ Team\+::get\+Current\+Season\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+an array of the team\textquotesingle{}s current cars. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTeam_ab21736a411213da36d08210e570ecbeb}\label{classTeam_ab21736a411213da36d08210e570ecbeb}} 
+\index{Team@{Team}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Team@{Team}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Team\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the name of the team. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTeam_a6bf3c6839b7d2e4b38fbb160c41a40ab}\label{classTeam_a6bf3c6839b7d2e4b38fbb160c41a40ab}} 
+\index{Team@{Team}!order\+Tyres@{order\+Tyres}}
+\index{order\+Tyres@{order\+Tyres}!Team@{Team}}
+\subsubsection{\texorpdfstring{order\+Tyres()}{orderTyres()}}
+{\footnotesize\ttfamily void Team\+::order\+Tyres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Orders tyres for both cars ahead of a race. \mbox{\Hypertarget{classTeam_add32843daa734d808b93e5a9793b158a}\label{classTeam_add32843daa734d808b93e5a9793b158a}} 
+\index{Team@{Team}!part\+Changed@{part\+Changed}}
+\index{part\+Changed@{part\+Changed}!Team@{Team}}
+\subsubsection{\texorpdfstring{part\+Changed()}{partChanged()}}
+{\footnotesize\ttfamily void Team\+::part\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{part,  }\item[{string}]{season }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & a newly created upgraded part. \\
+\hline
+{\em season} & The car that the upgrade applies to (\char`\"{}current\char`\"{} or \char`\"{}next\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTeam_a1fad6776814f2caf74088ee644435ae1}\label{classTeam_a1fad6776814f2caf74088ee644435ae1}} 
+\index{Team@{Team}!set\+European\+Strategy@{set\+European\+Strategy}}
+\index{set\+European\+Strategy@{set\+European\+Strategy}!Team@{Team}}
+\subsubsection{\texorpdfstring{set\+European\+Strategy()}{setEuropeanStrategy()}}
+{\footnotesize\ttfamily void Team\+::set\+European\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the team\textquotesingle{}s transport strategy to use \hyperlink{classTruck}{Truck}. \mbox{\Hypertarget{classTeam_a0eb5e6b897c90aa5026be4a0822c9fa5}\label{classTeam_a0eb5e6b897c90aa5026be4a0822c9fa5}} 
+\index{Team@{Team}!set\+Non\+European\+Strategy@{set\+Non\+European\+Strategy}}
+\index{set\+Non\+European\+Strategy@{set\+Non\+European\+Strategy}!Team@{Team}}
+\subsubsection{\texorpdfstring{set\+Non\+European\+Strategy()}{setNonEuropeanStrategy()}}
+{\footnotesize\ttfamily void Team\+::set\+Non\+European\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the team\textquotesingle{}s transport strategy to use \hyperlink{classShip}{Ship}. \mbox{\Hypertarget{classTeam_a21681f514dea00fe6bca432ef64eab1e}\label{classTeam_a21681f514dea00fe6bca432ef64eab1e}} 
+\index{Team@{Team}!transport@{transport}}
+\index{transport@{transport}!Team@{Team}}
+\subsubsection{\texorpdfstring{transport()}{transport()}}
+{\footnotesize\ttfamily void Team\+::transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transports items to a race using the current transport strategy. \mbox{\Hypertarget{classTeam_a013d81d7848893aef82a0e701b26777c}\label{classTeam_a013d81d7848893aef82a0e701b26777c}} 
+\index{Team@{Team}!update\+Points@{update\+Points}}
+\index{update\+Points@{update\+Points}!Team@{Team}}
+\subsubsection{\texorpdfstring{update\+Points()}{updatePoints()}}
+{\footnotesize\ttfamily void Team\+::update\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the team\textquotesingle{}s constructor points by adding its drivers\textquotesingle{} points together. \mbox{\Hypertarget{classTeam_adc73729b63d1a52595c60f9e29d6e429}\label{classTeam_adc73729b63d1a52595c60f9e29d6e429}} 
+\index{Team@{Team}!upgrade\+And\+Simulate@{upgrade\+And\+Simulate}}
+\index{upgrade\+And\+Simulate@{upgrade\+And\+Simulate}!Team@{Team}}
+\subsubsection{\texorpdfstring{upgrade\+And\+Simulate()}{upgradeAndSimulate()}}
+{\footnotesize\ttfamily void Team\+::upgrade\+And\+Simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tells a factory to work on an upgrade for the current cars, and trains the drivers. \mbox{\Hypertarget{classTeam_aedf4b8a3cd9edb5349b2b1d7dd965a2f}\label{classTeam_aedf4b8a3cd9edb5349b2b1d7dd965a2f}} 
+\index{Team@{Team}!upgrade\+Next\+Season@{upgrade\+Next\+Season}}
+\index{upgrade\+Next\+Season@{upgrade\+Next\+Season}!Team@{Team}}
+\subsubsection{\texorpdfstring{upgrade\+Next\+Season()}{upgradeNextSeason()}}
+{\footnotesize\ttfamily void Team\+::upgrade\+Next\+Season (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tells a factory to work on an upgrade for next season\textquotesingle{}s cars. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Team/Team.\+h\item 
+Team/Team.\+cpp\end{DoxyCompactItemize}

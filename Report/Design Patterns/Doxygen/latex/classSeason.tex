@@ -1,0 +1,208 @@
+\hypertarget{classSeason}{}\section{Season Class Reference}
+\label{classSeason}\index{Season@{Season}}
+
+
+{\ttfamily \#include \char`\"{}Season/\+Season.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Season\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSeason_a7dd3d83b670a108aa5a00f214757717e}{$\sim$\+Season} ()
+\item 
+void \hyperlink{classSeason_a46121f481fc764fa9e480708817442aa}{add\+Team} (string team\+Name, string driver1, string driver2)
+\item 
+void \hyperlink{classSeason_a6b4c865c1da9ad6ae00b1ce081aed292}{add\+Race} (int length, bool european, int date, string name, int average\+Lap\+Time)
+\item 
+void \hyperlink{classSeason_ac87bc08315fcfb5a5921e476ff608934}{run\+Season} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSeason}{Season} \hyperlink{classSeason_a6f0fa8d25bd43abc987a25e6f6936fd7}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSeason_a069a1041ff9a2a2d918ad5e3bb062a08}{Season} ()
+\item 
+void \hyperlink{classSeason_ad5455ffe0999020706d9068b43baef91}{order\+Tyres} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$$\ast$ \hyperlink{classSeason_aa51c303aa0ba522f2e95d263995f7791}{get\+Cars} ()
+\item 
+void \hyperlink{classSeason_ad5fdae208b154f4f0c4f455a61f0f9fc}{display\+Constructors\+Standings} ()
+\item 
+void \hyperlink{classSeason_a9d5193a7765ebff700e8b80a31e8f2e1}{display\+Drivers\+Standings} ()
+\item 
+void \hyperlink{classSeason_a28bc89521eec63fe56039c9d1e50c548}{transport} (bool european)
+\item 
+\hyperlink{classRaceIterator}{Race\+Iterator} $\ast$ \hyperlink{classSeason_af8e26b685e4acd103816f5190efefd54}{create\+Iterator} ()
+\item 
+void \hyperlink{classSeason_a4eecb09cc35da82444657a9095789dca}{upgrade\+And\+Simulate} (bool next\+Season)
+\item 
+void \hyperlink{classSeason_ac03a6b5518cfac9b2c6fce755c8f9821}{update\+Team\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSeason_ac0f6319c56f4fdeba138272e7440b6cb}\label{classSeason_ac0f6319c56f4fdeba138272e7440b6cb}} 
+\hyperlink{classTeam}{Team} $\ast$$\ast$ {\bfseries teams}
+\item 
+\mbox{\Hypertarget{classSeason_af88edad60b9ec6d41d34abc4a549432b}\label{classSeason_af88edad60b9ec6d41d34abc4a549432b}} 
+int {\bfseries num\+Teams}
+\item 
+\mbox{\Hypertarget{classSeason_a45719327bc03b9d99d1a8ed52887f7c6}\label{classSeason_a45719327bc03b9d99d1a8ed52887f7c6}} 
+\hyperlink{classRace}{Race} $\ast$$\ast$ {\bfseries races}
+\item 
+\mbox{\Hypertarget{classSeason_a92951ddafbb76573c2996733c3bf12e6}\label{classSeason_a92951ddafbb76573c2996733c3bf12e6}} 
+int {\bfseries num\+Races}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSeason_ab85c84f66c2dca8651d0a6d21b72f49a}\label{classSeason_ab85c84f66c2dca8651d0a6d21b72f49a}} 
+static \hyperlink{classSeason}{Season} $\ast$ {\bfseries singleton}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} singleton that represents the F1 season run in this simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSeason_a069a1041ff9a2a2d918ad5e3bb062a08}\label{classSeason_a069a1041ff9a2a2d918ad5e3bb062a08}} 
+\index{Season@{Season}!Season@{Season}}
+\index{Season@{Season}!Season@{Season}}
+\subsubsection{\texorpdfstring{Season()}{Season()}}
+{\footnotesize\ttfamily Season\+::\+Season (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Private constructor \mbox{\Hypertarget{classSeason_a7dd3d83b670a108aa5a00f214757717e}\label{classSeason_a7dd3d83b670a108aa5a00f214757717e}} 
+\index{Season@{Season}!````~Season@{$\sim$\+Season}}
+\index{````~Season@{$\sim$\+Season}!Season@{Season}}
+\subsubsection{\texorpdfstring{$\sim$\+Season()}{~Season()}}
+{\footnotesize\ttfamily Season\+::$\sim$\+Season (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor that deletes all races and teams, as well as the unique \hyperlink{classSeason}{Season} object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSeason_a6b4c865c1da9ad6ae00b1ce081aed292}\label{classSeason_a6b4c865c1da9ad6ae00b1ce081aed292}} 
+\index{Season@{Season}!add\+Race@{add\+Race}}
+\index{add\+Race@{add\+Race}!Season@{Season}}
+\subsubsection{\texorpdfstring{add\+Race()}{addRace()}}
+{\footnotesize\ttfamily void Season\+::add\+Race (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{bool}]{european,  }\item[{int}]{date,  }\item[{string}]{name,  }\item[{int}]{average\+Lap\+Time }\end{DoxyParamCaption})}
+
+Adds a race to the season. 
+\begin{DoxyParams}{Parameters}
+{\em length} & The number of laps in the race \\
+\hline
+{\em european} & True if the race is European, false if not \\
+\hline
+{\em date} & The date of the race (1-\/365) \\
+\hline
+{\em name} & The name of the race, including the country that it is held in \\
+\hline
+{\em average\+Lap\+Time} & The average lap time around the circuit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSeason_a46121f481fc764fa9e480708817442aa}\label{classSeason_a46121f481fc764fa9e480708817442aa}} 
+\index{Season@{Season}!add\+Team@{add\+Team}}
+\index{add\+Team@{add\+Team}!Season@{Season}}
+\subsubsection{\texorpdfstring{add\+Team()}{addTeam()}}
+{\footnotesize\ttfamily void Season\+::add\+Team (\begin{DoxyParamCaption}\item[{string}]{team\+Name,  }\item[{string}]{driver1,  }\item[{string}]{driver2 }\end{DoxyParamCaption})}
+
+Enters a team into the season. 
+\begin{DoxyParams}{Parameters}
+{\em team\+Name} & The name of the team. \\
+\hline
+{\em driver1} & The name of the team\textquotesingle{}s first driver. \\
+\hline
+{\em driver2} & The name of the team\textquotesingle{}s second driver. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSeason_af8e26b685e4acd103816f5190efefd54}\label{classSeason_af8e26b685e4acd103816f5190efefd54}} 
+\index{Season@{Season}!create\+Iterator@{create\+Iterator}}
+\index{create\+Iterator@{create\+Iterator}!Season@{Season}}
+\subsubsection{\texorpdfstring{create\+Iterator()}{createIterator()}}
+{\footnotesize\ttfamily \hyperlink{classRaceIterator}{Race\+Iterator} $\ast$ Season\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classRaceIterator}{Race\+Iterator} for going through all races 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSeason_ad5fdae208b154f4f0c4f455a61f0f9fc}\label{classSeason_ad5fdae208b154f4f0c4f455a61f0f9fc}} 
+\index{Season@{Season}!display\+Constructors\+Standings@{display\+Constructors\+Standings}}
+\index{display\+Constructors\+Standings@{display\+Constructors\+Standings}!Season@{Season}}
+\subsubsection{\texorpdfstring{display\+Constructors\+Standings()}{displayConstructorsStandings()}}
+{\footnotesize\ttfamily void Season\+::display\+Constructors\+Standings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Prints the current constructors\textquotesingle{} standings. \mbox{\Hypertarget{classSeason_a9d5193a7765ebff700e8b80a31e8f2e1}\label{classSeason_a9d5193a7765ebff700e8b80a31e8f2e1}} 
+\index{Season@{Season}!display\+Drivers\+Standings@{display\+Drivers\+Standings}}
+\index{display\+Drivers\+Standings@{display\+Drivers\+Standings}!Season@{Season}}
+\subsubsection{\texorpdfstring{display\+Drivers\+Standings()}{displayDriversStandings()}}
+{\footnotesize\ttfamily void Season\+::display\+Drivers\+Standings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Displays the current drivers\textquotesingle{} standings. \mbox{\Hypertarget{classSeason_aa51c303aa0ba522f2e95d263995f7791}\label{classSeason_aa51c303aa0ba522f2e95d263995f7791}} 
+\index{Season@{Season}!get\+Cars@{get\+Cars}}
+\index{get\+Cars@{get\+Cars}!Season@{Season}}
+\subsubsection{\texorpdfstring{get\+Cars()}{getCars()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$$\ast$ Season\+::get\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Returns}
+An array of all \hyperlink{classCar}{Car} objects from all \hyperlink{classTeam}{Team} objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSeason_a6f0fa8d25bd43abc987a25e6f6936fd7}\label{classSeason_a6f0fa8d25bd43abc987a25e6f6936fd7}} 
+\index{Season@{Season}!instance@{instance}}
+\index{instance@{instance}!Season@{Season}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \hyperlink{classSeason}{Season} Season\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+The unique instance of \hyperlink{classSeason}{Season} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSeason_ad5455ffe0999020706d9068b43baef91}\label{classSeason_ad5455ffe0999020706d9068b43baef91}} 
+\index{Season@{Season}!order\+Tyres@{order\+Tyres}}
+\index{order\+Tyres@{order\+Tyres}!Season@{Season}}
+\subsubsection{\texorpdfstring{order\+Tyres()}{orderTyres()}}
+{\footnotesize\ttfamily void Season\+::order\+Tyres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Orders tyres for all teams \mbox{\Hypertarget{classSeason_ac87bc08315fcfb5a5921e476ff608934}\label{classSeason_ac87bc08315fcfb5a5921e476ff608934}} 
+\index{Season@{Season}!run\+Season@{run\+Season}}
+\index{run\+Season@{run\+Season}!Season@{Season}}
+\subsubsection{\texorpdfstring{run\+Season()}{runSeason()}}
+{\footnotesize\ttfamily void Season\+::run\+Season (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Runs an entire season with the races and teams that have been provided. \mbox{\Hypertarget{classSeason_a28bc89521eec63fe56039c9d1e50c548}\label{classSeason_a28bc89521eec63fe56039c9d1e50c548}} 
+\index{Season@{Season}!transport@{transport}}
+\index{transport@{transport}!Season@{Season}}
+\subsubsection{\texorpdfstring{transport()}{transport()}}
+{\footnotesize\ttfamily void Season\+::transport (\begin{DoxyParamCaption}\item[{bool}]{european }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Tells all teams to transport equipment to a race. 
+\begin{DoxyParams}{Parameters}
+{\em european} & True if the race is European, false if not. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSeason_ac03a6b5518cfac9b2c6fce755c8f9821}\label{classSeason_ac03a6b5518cfac9b2c6fce755c8f9821}} 
+\index{Season@{Season}!update\+Team\+Points@{update\+Team\+Points}}
+\index{update\+Team\+Points@{update\+Team\+Points}!Season@{Season}}
+\subsubsection{\texorpdfstring{update\+Team\+Points()}{updateTeamPoints()}}
+{\footnotesize\ttfamily void Season\+::update\+Team\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Tells all teams to update their constructors\textquotesingle{} points according to their drivers\textquotesingle{} points. \mbox{\Hypertarget{classSeason_a4eecb09cc35da82444657a9095789dca}\label{classSeason_a4eecb09cc35da82444657a9095789dca}} 
+\index{Season@{Season}!upgrade\+And\+Simulate@{upgrade\+And\+Simulate}}
+\index{upgrade\+And\+Simulate@{upgrade\+And\+Simulate}!Season@{Season}}
+\subsubsection{\texorpdfstring{upgrade\+And\+Simulate()}{upgradeAndSimulate()}}
+{\footnotesize\ttfamily void Season\+::upgrade\+And\+Simulate (\begin{DoxyParamCaption}\item[{bool}]{next\+Season }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Upgrades all cars, and trains drivers in the simulator if applicable 
+\begin{DoxyParams}{Parameters}
+{\em next\+Season} & True if \hyperlink{classNextSeason}{Next\+Season} cars should be upgraded, and false if \hyperlink{classCurrentSeason}{Current\+Season} cars should be upgraded and drivers should train in the simulator. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Season/Season.\+h\item 
+Season/Season.\+cpp\end{DoxyCompactItemize}

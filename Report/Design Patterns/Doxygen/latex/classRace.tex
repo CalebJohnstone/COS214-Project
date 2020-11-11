@@ -1,0 +1,188 @@
+\hypertarget{classRace}{}\section{Race Class Reference}
+\label{classRace}\index{Race@{Race}}
+
+
+{\ttfamily \#include \char`\"{}Season/\+Race.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Race\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRace_aac8d492b10c760c0fb0a5e0b0e013dca}{Race} (int l, bool euro, int d, string n, int avgL)
+\item 
+void \hyperlink{classRace_a137e1b46846619d85d1fd5af06cb9a44}{print\+Leader\+Board} ()
+\item 
+int \hyperlink{classRace_ac8130e3ce8bc18a208071937058100c9}{get\+Date} ()
+\item 
+bool \hyperlink{classRace_a1fb45997b626b183e86e1726d91d1263}{is\+European} ()
+\item 
+void \hyperlink{classRace_a3ebb8fd22b1873fa3bb4d9df0bd839a3}{run\+Race\+Weekend} (\hyperlink{classCar}{Car} $\ast$$\ast$c, int num)
+\item 
+string \hyperlink{classRace_a8375cd2498a798c9a25c8459768b1ee8}{get\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRace_a5a4e8d13d043114b2260e297b2f00b0c}{run\+Free\+Practice2} ()
+\item 
+void \hyperlink{classRace_ad10dda455090692cb7fc05cd5fdf66aa}{run\+Qualifying} ()
+\item 
+void \hyperlink{classRace_a0f2422e16378be067631eaa7c370e09c}{run\+Free\+Practice1} ()
+\item 
+void \hyperlink{classRace_a79ac9d5338dce7e35a17d77b4b6f85b1}{pit\+Stop} ()
+\item 
+void \hyperlink{classRace_a753f045468dd1c6db5ed2aa1e0202cf1}{run\+Race} ()
+\item 
+void \hyperlink{classRace_a11e9a7fa89848e8dff07c4703f7bbdea}{sort\+Drivers} ()
+\item 
+void \hyperlink{classRace_abed9e74190e4eb7bdb76883659c4b345}{allocate\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRace_afe9105279db6bf9863c4c251e5a4b7c2}\label{classRace_afe9105279db6bf9863c4c251e5a4b7c2}} 
+int {\bfseries laps}
+\item 
+\mbox{\Hypertarget{classRace_a21de91e1163306dc0fac17d3714918c3}\label{classRace_a21de91e1163306dc0fac17d3714918c3}} 
+bool {\bfseries european}
+\item 
+\mbox{\Hypertarget{classRace_a16075783ff3af55b7ebf76d976302178}\label{classRace_a16075783ff3af55b7ebf76d976302178}} 
+int {\bfseries date}
+\item 
+\mbox{\Hypertarget{classRace_aaa2d7a8eaf969f0a4f91fc1b49184458}\label{classRace_aaa2d7a8eaf969f0a4f91fc1b49184458}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classRace_a4a037bea1b066e953e739e58700e6cfb}\label{classRace_a4a037bea1b066e953e739e58700e6cfb}} 
+\hyperlink{classCar}{Car} $\ast$$\ast$ {\bfseries cars}
+\item 
+\mbox{\Hypertarget{classRace_ab365dd351b206397bb2a57f55197e12e}\label{classRace_ab365dd351b206397bb2a57f55197e12e}} 
+int {\bfseries num\+Cars}
+\item 
+\mbox{\Hypertarget{classRace_a99c047fd418cb7d320f116c5609eb86e}\label{classRace_a99c047fd418cb7d320f116c5609eb86e}} 
+int {\bfseries average\+Lap\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a single race. It is the Aggregate participant of the Iterator design pattern. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRace_aac8d492b10c760c0fb0a5e0b0e013dca}\label{classRace_aac8d492b10c760c0fb0a5e0b0e013dca}} 
+\index{Race@{Race}!Race@{Race}}
+\index{Race@{Race}!Race@{Race}}
+\subsubsection{\texorpdfstring{Race()}{Race()}}
+{\footnotesize\ttfamily Race\+::\+Race (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{bool}]{euro,  }\item[{int}]{d,  }\item[{string}]{n,  }\item[{int}]{avgL }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The number of laps in the race \\
+\hline
+{\em euro} & True if the race is European, false if not \\
+\hline
+{\em d} & The date when the race weekend starts (1 to 365) \\
+\hline
+{\em n} & The name of the race, which includes the country it is held in) \\
+\hline
+{\em avgL} & The average lap time around the circuit \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRace_abed9e74190e4eb7bdb76883659c4b345}\label{classRace_abed9e74190e4eb7bdb76883659c4b345}} 
+\index{Race@{Race}!allocate\+Points@{allocate\+Points}}
+\index{allocate\+Points@{allocate\+Points}!Race@{Race}}
+\subsubsection{\texorpdfstring{allocate\+Points()}{allocatePoints()}}
+{\footnotesize\ttfamily void Race\+::allocate\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Add points to drivers\textquotesingle{} totals after a race depending on their finishing position. \mbox{\Hypertarget{classRace_ac8130e3ce8bc18a208071937058100c9}\label{classRace_ac8130e3ce8bc18a208071937058100c9}} 
+\index{Race@{Race}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Race@{Race}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily int Race\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The date when the race weekend starts. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRace_a8375cd2498a798c9a25c8459768b1ee8}\label{classRace_a8375cd2498a798c9a25c8459768b1ee8}} 
+\index{Race@{Race}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Race@{Race}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Race\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The name of the race, which includes the country it is held in. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRace_a1fb45997b626b183e86e1726d91d1263}\label{classRace_a1fb45997b626b183e86e1726d91d1263}} 
+\index{Race@{Race}!is\+European@{is\+European}}
+\index{is\+European@{is\+European}!Race@{Race}}
+\subsubsection{\texorpdfstring{is\+European()}{isEuropean()}}
+{\footnotesize\ttfamily bool Race\+::is\+European (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+True if the race is European, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRace_a79ac9d5338dce7e35a17d77b4b6f85b1}\label{classRace_a79ac9d5338dce7e35a17d77b4b6f85b1}} 
+\index{Race@{Race}!pit\+Stop@{pit\+Stop}}
+\index{pit\+Stop@{pit\+Stop}!Race@{Race}}
+\subsubsection{\texorpdfstring{pit\+Stop()}{pitStop()}}
+{\footnotesize\ttfamily void Race\+::pit\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sends all drivers into the pits for a tyre change. \mbox{\Hypertarget{classRace_a137e1b46846619d85d1fd5af06cb9a44}\label{classRace_a137e1b46846619d85d1fd5af06cb9a44}} 
+\index{Race@{Race}!print\+Leader\+Board@{print\+Leader\+Board}}
+\index{print\+Leader\+Board@{print\+Leader\+Board}!Race@{Race}}
+\subsubsection{\texorpdfstring{print\+Leader\+Board()}{printLeaderBoard()}}
+{\footnotesize\ttfamily void Race\+::print\+Leader\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints a leaderboard of the current positions of the drivers. \mbox{\Hypertarget{classRace_a0f2422e16378be067631eaa7c370e09c}\label{classRace_a0f2422e16378be067631eaa7c370e09c}} 
+\index{Race@{Race}!run\+Free\+Practice1@{run\+Free\+Practice1}}
+\index{run\+Free\+Practice1@{run\+Free\+Practice1}!Race@{Race}}
+\subsubsection{\texorpdfstring{run\+Free\+Practice1()}{runFreePractice1()}}
+{\footnotesize\ttfamily void Race\+::run\+Free\+Practice1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Run free practice on Friday morning. \mbox{\Hypertarget{classRace_a5a4e8d13d043114b2260e297b2f00b0c}\label{classRace_a5a4e8d13d043114b2260e297b2f00b0c}} 
+\index{Race@{Race}!run\+Free\+Practice2@{run\+Free\+Practice2}}
+\index{run\+Free\+Practice2@{run\+Free\+Practice2}!Race@{Race}}
+\subsubsection{\texorpdfstring{run\+Free\+Practice2()}{runFreePractice2()}}
+{\footnotesize\ttfamily void Race\+::run\+Free\+Practice2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Run free practice on Saturday morning. \mbox{\Hypertarget{classRace_ad10dda455090692cb7fc05cd5fdf66aa}\label{classRace_ad10dda455090692cb7fc05cd5fdf66aa}} 
+\index{Race@{Race}!run\+Qualifying@{run\+Qualifying}}
+\index{run\+Qualifying@{run\+Qualifying}!Race@{Race}}
+\subsubsection{\texorpdfstring{run\+Qualifying()}{runQualifying()}}
+{\footnotesize\ttfamily void Race\+::run\+Qualifying (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Run qualifying on Saturday afternoon. \mbox{\Hypertarget{classRace_a753f045468dd1c6db5ed2aa1e0202cf1}\label{classRace_a753f045468dd1c6db5ed2aa1e0202cf1}} 
+\index{Race@{Race}!run\+Race@{run\+Race}}
+\index{run\+Race@{run\+Race}!Race@{Race}}
+\subsubsection{\texorpdfstring{run\+Race()}{runRace()}}
+{\footnotesize\ttfamily void Race\+::run\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Run the race on Sunday afternoon. \mbox{\Hypertarget{classRace_a3ebb8fd22b1873fa3bb4d9df0bd839a3}\label{classRace_a3ebb8fd22b1873fa3bb4d9df0bd839a3}} 
+\index{Race@{Race}!run\+Race\+Weekend@{run\+Race\+Weekend}}
+\index{run\+Race\+Weekend@{run\+Race\+Weekend}!Race@{Race}}
+\subsubsection{\texorpdfstring{run\+Race\+Weekend()}{runRaceWeekend()}}
+{\footnotesize\ttfamily void Race\+::run\+Race\+Weekend (\begin{DoxyParamCaption}\item[{\hyperlink{classCar}{Car} $\ast$$\ast$}]{c,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+Runs a race weekend with the given \hyperlink{classCar}{Car} objects. 
+\begin{DoxyParams}{Parameters}
+{\em c} & An array of \hyperlink{classCar}{Car} objects that have entered the race. \\
+\hline
+{\em num} & The number of \hyperlink{classCar}{Car} objects \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRace_a11e9a7fa89848e8dff07c4703f7bbdea}\label{classRace_a11e9a7fa89848e8dff07c4703f7bbdea}} 
+\index{Race@{Race}!sort\+Drivers@{sort\+Drivers}}
+\index{sort\+Drivers@{sort\+Drivers}!Race@{Race}}
+\subsubsection{\texorpdfstring{sort\+Drivers()}{sortDrivers()}}
+{\footnotesize\ttfamily void Race\+::sort\+Drivers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sort the cars by their race\+Time in ascending order (lowest time is fastest). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Season/Race.\+h\item 
+Season/Race.\+cpp\end{DoxyCompactItemize}

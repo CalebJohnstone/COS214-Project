@@ -1,0 +1,81 @@
+\hypertarget{classDepartmentMediator}{}\section{Department\+Mediator Class Reference}
+\label{classDepartmentMediator}\index{Department\+Mediator@{Department\+Mediator}}
+
+
+{\ttfamily \#include \char`\"{}Team/\+Department/\+Department\+Mediator.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Department\+Mediator\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDepartmentMediator_ae237a0b0e0ca262e2e51254be2b894d3}{Department\+Mediator} (\hyperlink{classTeam}{Team} $\ast$team)
+\item 
+void \hyperlink{classDepartmentMediator_a1cd1ac08b0aa2d6eb7f31b9fb20155d6}{communicate} (\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$part, string season)
+\item 
+void \hyperlink{classDepartmentMediator_a24fa0b87c5dbcbf2868e062d599b49e3}{attach\+Department} (\hyperlink{classDepartmentFactory}{Department\+Factory} $\ast$department)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDepartmentMediator_a0f7609e536415d21a13e0ea1e0c5933d}\label{classDepartmentMediator_a0f7609e536415d21a13e0ea1e0c5933d}} 
+int {\bfseries current\+Department}
+\item 
+\mbox{\Hypertarget{classDepartmentMediator_a7f48243c6c2ca1f7fa4126ef8c08c418}\label{classDepartmentMediator_a7f48243c6c2ca1f7fa4126ef8c08c418}} 
+\hyperlink{classDepartmentFactory}{Department\+Factory} $\ast$$\ast$ {\bfseries departments}
+\item 
+\mbox{\Hypertarget{classDepartmentMediator_aedf02920f41ad7af01457248bbf8af58}\label{classDepartmentMediator_aedf02920f41ad7af01457248bbf8af58}} 
+\hyperlink{classTeam}{Team} $\ast$ {\bfseries team}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pattern\+: Mediator. This class is the mediator that tells the team as well as other departments when a new part has been added to the car. This class servers as both the Mediator and Concrete\+Mediator participants. The Colleague participant is the \hyperlink{classDepartmentOutput}{Department\+Output} class and the Concrete\+Colleague participants are \hyperlink{classAerodynamics}{Aerodynamics}, \hyperlink{classElectronics}{Electronics}, \hyperlink{classEngine}{Engine} and \hyperlink{classChassis}{Chassis}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDepartmentMediator_ae237a0b0e0ca262e2e51254be2b894d3}\label{classDepartmentMediator_ae237a0b0e0ca262e2e51254be2b894d3}} 
+\index{Department\+Mediator@{Department\+Mediator}!Department\+Mediator@{Department\+Mediator}}
+\index{Department\+Mediator@{Department\+Mediator}!Department\+Mediator@{Department\+Mediator}}
+\subsubsection{\texorpdfstring{Department\+Mediator()}{DepartmentMediator()}}
+{\footnotesize\ttfamily Department\+Mediator\+::\+Department\+Mediator (\begin{DoxyParamCaption}\item[{\hyperlink{classTeam}{Team} $\ast$}]{team }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em team} & The team that the departments are for. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDepartmentMediator_a24fa0b87c5dbcbf2868e062d599b49e3}\label{classDepartmentMediator_a24fa0b87c5dbcbf2868e062d599b49e3}} 
+\index{Department\+Mediator@{Department\+Mediator}!attach\+Department@{attach\+Department}}
+\index{attach\+Department@{attach\+Department}!Department\+Mediator@{Department\+Mediator}}
+\subsubsection{\texorpdfstring{attach\+Department()}{attachDepartment()}}
+{\footnotesize\ttfamily void Department\+Mediator\+::attach\+Department (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentFactory}{Department\+Factory} $\ast$}]{department }\end{DoxyParamCaption})}
+
+Used to attach a department to this mediator. 
+\begin{DoxyParams}{Parameters}
+{\em department} & The department factory to attach. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDepartmentMediator_a1cd1ac08b0aa2d6eb7f31b9fb20155d6}\label{classDepartmentMediator_a1cd1ac08b0aa2d6eb7f31b9fb20155d6}} 
+\index{Department\+Mediator@{Department\+Mediator}!communicate@{communicate}}
+\index{communicate@{communicate}!Department\+Mediator@{Department\+Mediator}}
+\subsubsection{\texorpdfstring{communicate()}{communicate()}}
+{\footnotesize\ttfamily void Department\+Mediator\+::communicate (\begin{DoxyParamCaption}\item[{\hyperlink{classDepartmentOutput}{Department\+Output} $\ast$}]{part,  }\item[{string}]{season }\end{DoxyParamCaption})}
+
+First the team is notified about the new part being added then the other departments are notified. For example\+: if the \hyperlink{classAerodynamics}{Aerodynamics} department produces a new part then the \hyperlink{classElectronics}{Electronics}, \hyperlink{classEngine}{Engine} and \hyperlink{classChassis}{Chassis} departments must be notified of this change. 
+\begin{DoxyParams}{Parameters}
+{\em part} & The new part added to the car. \\
+\hline
+{\em season} & \hyperlink{classA}{A} string that is either \char`\"{}current\char`\"{} or \char`\"{}next\char`\"{} to indicate which season the car is for \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Team/\+Department/Department\+Mediator.\+h\item 
+Team/\+Department/Department\+Mediator.\+cpp\end{DoxyCompactItemize}

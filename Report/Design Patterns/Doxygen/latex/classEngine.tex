@@ -1,0 +1,82 @@
+\hypertarget{classEngine}{}\section{Engine Class Reference}
+\label{classEngine}\index{Engine@{Engine}}
+
+
+{\ttfamily \#include \char`\"{}Car/\+Parts/\+Engine.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Engine\+:
+% FIG 0
+
+
+Collaboration diagram for Engine\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine} ()
+\item 
+\hyperlink{classEngine}{Engine} $\ast$ \hyperlink{classEngine_a9cf97e7e9b82db13748a00256c1e4509}{cpy} ()
+\item 
+int \hyperlink{classEngine_a5f828ac1355f02d43f8bae90fbddb131}{get\+Speed} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classEngine_a18a3b9d950e67a868420b79890ba1428}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classA}{A} class \hyperlink{classEngine}{Engine} that is a concrete\+Decorator of the decorator design pattern,concrete\+Product of the Factory method 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classA}{A} constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEngine_a18a3b9d950e67a868420b79890ba1428}\label{classEngine_a18a3b9d950e67a868420b79890ba1428}} 
+\index{Engine@{Engine}!clone@{clone}}
+\index{clone@{clone}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Engine\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clones the objects variables and returns a new \hyperlink{classEngine}{Engine},method of the prototype design pattern \begin{DoxyReturn}{Returns}
+\hyperlink{classEngine}{Engine} object 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}{Department\+Output}.
+
+\mbox{\Hypertarget{classEngine_a9cf97e7e9b82db13748a00256c1e4509}\label{classEngine_a9cf97e7e9b82db13748a00256c1e4509}} 
+\index{Engine@{Engine}!cpy@{cpy}}
+\index{cpy@{cpy}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{cpy()}{cpy()}}
+{\footnotesize\ttfamily \hyperlink{classEngine}{Engine} $\ast$ Engine\+::cpy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Helper function used by clone function \begin{DoxyReturn}{Returns}
+\hyperlink{classEngine}{Engine} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEngine_a5f828ac1355f02d43f8bae90fbddb131}\label{classEngine_a5f828ac1355f02d43f8bae90fbddb131}} 
+\index{Engine@{Engine}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Engine@{Engine}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Engine\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the engines speed \begin{DoxyReturn}{Returns}
+the cars speed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}{Department\+Output}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car/\+Parts/Engine.\+h\item 
+Car/\+Parts/Engine.\+cpp\end{DoxyCompactItemize}

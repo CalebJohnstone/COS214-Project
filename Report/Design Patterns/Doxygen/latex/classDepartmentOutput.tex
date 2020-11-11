@@ -1,0 +1,347 @@
+\hypertarget{classDepartmentOutput}{}\section{Department\+Output Class Reference}
+\label{classDepartmentOutput}\index{Department\+Output@{Department\+Output}}
+
+
+{\ttfamily \#include \char`\"{}Car/\+Parts/\+Department\+Output.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Department\+Output\+:
+% FIG 0
+
+
+Collaboration diagram for Department\+Output\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDepartmentOutput_af48d2aeafaead9c3f77c506112d80ca8}{Department\+Output} ()
+\item 
+virtual \hyperlink{classDepartmentOutput_afd3aeb3b20f1215d15f7b0498f6c6acb}{$\sim$\+Department\+Output} ()
+\item 
+int \hyperlink{classDepartmentOutput_a34d5c432ee7e7e8a33a4e8099a2c751f}{calculate\+Speed} ()
+\item 
+void \hyperlink{classDepartmentOutput_a8b39539ad1ca3d8026d53dd5ab88be97}{add\+Part} (\hyperlink{classCar}{Car} $\ast$part)
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classDepartmentOutput_a8bd91d321113668938ecb8fb549d972c}{remove\+Part} (string part)
+\item 
+string \hyperlink{classDepartmentOutput_a9366794b5b64ed37cf37ed6443eecf01}{get\+Type} ()
+\item 
+\hyperlink{classCar}{Car} $\ast$ \hyperlink{classDepartmentOutput_ab12d572677cc6c3a4b32cc1c5894f54e}{get\+Next} ()
+\item 
+virtual int \hyperlink{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}{get\+Speed} ()
+\item 
+virtual \hyperlink{classCar}{Car} $\ast$ \hyperlink{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}{clone} ()=0
+\item 
+void \hyperlink{classDepartmentOutput_a99c1b2cf729b25bc2f1d48214019c678}{set\+Race\+Time} (int rt)
+\item 
+void \hyperlink{classDepartmentOutput_a64f6b8afd2702b4d223c4cac0909b470}{increment\+Race\+Time} (int rt)
+\item 
+int \hyperlink{classDepartmentOutput_af4807c0cdde8488cd922be5d15a0f59b}{get\+Race\+Time} ()
+\item 
+void \hyperlink{classDepartmentOutput_aa045362e5763d57a2c888b98c677773c}{set\+Driver} (\hyperlink{classDriver}{Driver} $\ast$d)
+\item 
+int \hyperlink{classDepartmentOutput_ac1eac849b183dd78906a5b2a7217b8ef}{get\+Points} ()
+\item 
+void \hyperlink{classDepartmentOutput_a6ce74748aa402298902e378ff47c1e49}{add\+Points} (int p)
+\item 
+void \hyperlink{classDepartmentOutput_a3c189e28c9d8899afafe3d6ee7d7602d}{simulate} ()
+\item 
+string \hyperlink{classDepartmentOutput_a5c2bbaa1979ecbbd06629440884966a0}{get\+Driver\+Name} ()
+\item 
+void \hyperlink{classDepartmentOutput_a7f231762cf94d1f18a2e7bb3290afbda}{add\+Tyres} (\hyperlink{classTyre}{Tyre} $\ast$$\ast$t, int num)
+\item 
+void \hyperlink{classDepartmentOutput_a9c1846e268ea5e85eb623d8011f204f5}{pop\+Old\+Tyre} ()
+\item 
+\hyperlink{classTyre}{Tyre} $\ast$ \hyperlink{classDepartmentOutput_aca95508fd9145baea4e7a32448fa653b}{current\+Tyre} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDepartmentOutput_a80415966e2307bbd8b7d6ec53a709ab7}\label{classDepartmentOutput_a80415966e2307bbd8b7d6ec53a709ab7}} 
+int {\bfseries speed}
+\item 
+\mbox{\Hypertarget{classDepartmentOutput_a1f82ab864fefab53c1c72707a4de6a99}\label{classDepartmentOutput_a1f82ab864fefab53c1c72707a4de6a99}} 
+string {\bfseries type}
+\item 
+\mbox{\Hypertarget{classDepartmentOutput_a4bf4b9dd4707658be9f0573f493ec296}\label{classDepartmentOutput_a4bf4b9dd4707658be9f0573f493ec296}} 
+\hyperlink{classCar}{Car} $\ast$ {\bfseries next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pattern\+: Factory Method. \hyperlink{classA}{A} class \hyperlink{classDepartmentOutput}{Department\+Output} Decorator partcipant of the decorator design pattern,concrete\+Handler of the chain of responsibilities design pattern,Product of the factory method design pattern This is the Product participant and the Concrete\+Product participants are \hyperlink{classAerodynamics}{Aerodynamics}, \hyperlink{classElectronics}{Electronics}, \hyperlink{classEngine}{Engine} and \hyperlink{classChassis}{Chassis}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDepartmentOutput_af48d2aeafaead9c3f77c506112d80ca8}\label{classDepartmentOutput_af48d2aeafaead9c3f77c506112d80ca8}} 
+\index{Department\+Output@{Department\+Output}!Department\+Output@{Department\+Output}}
+\index{Department\+Output@{Department\+Output}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{Department\+Output()}{DepartmentOutput()}}
+{\footnotesize\ttfamily Department\+Output\+::\+Department\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor creates a departmentoutput object \mbox{\Hypertarget{classDepartmentOutput_afd3aeb3b20f1215d15f7b0498f6c6acb}\label{classDepartmentOutput_afd3aeb3b20f1215d15f7b0498f6c6acb}} 
+\index{Department\+Output@{Department\+Output}!````~Department\+Output@{$\sim$\+Department\+Output}}
+\index{````~Department\+Output@{$\sim$\+Department\+Output}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{$\sim$\+Department\+Output()}{~DepartmentOutput()}}
+{\footnotesize\ttfamily Department\+Output\+::$\sim$\+Department\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor to deallocate the next pointers 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDepartmentOutput_a8b39539ad1ca3d8026d53dd5ab88be97}\label{classDepartmentOutput_a8b39539ad1ca3d8026d53dd5ab88be97}} 
+\index{Department\+Output@{Department\+Output}!add\+Part@{add\+Part}}
+\index{add\+Part@{add\+Part}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{add\+Part()}{addPart()}}
+{\footnotesize\ttfamily void Department\+Output\+::add\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{classCar}{Car} $\ast$}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a new part to the list of decorators 
+\begin{DoxyParams}{Parameters}
+{\em part} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a97c6c4d86fd756e496871bda0651c5c6}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a6ce74748aa402298902e378ff47c1e49}\label{classDepartmentOutput_a6ce74748aa402298902e378ff47c1e49}} 
+\index{Department\+Output@{Department\+Output}!add\+Points@{add\+Points}}
+\index{add\+Points@{add\+Points}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{add\+Points()}{addPoints()}}
+{\footnotesize\ttfamily void Department\+Output\+::add\+Points (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add points to the driver of the car, handle request method of chain of responisibility to get to the currentseason car to handle the request 
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a946872fcdb7625c343e5caf90fa39617}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a7f231762cf94d1f18a2e7bb3290afbda}\label{classDepartmentOutput_a7f231762cf94d1f18a2e7bb3290afbda}} 
+\index{Department\+Output@{Department\+Output}!add\+Tyres@{add\+Tyres}}
+\index{add\+Tyres@{add\+Tyres}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{add\+Tyres()}{addTyres()}}
+{\footnotesize\ttfamily void Department\+Output\+::add\+Tyres (\begin{DoxyParamCaption}\item[{\hyperlink{classTyre}{Tyre} $\ast$$\ast$}]{t,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add an array of tyres to the car,handle request method of chain of responisibility to get to the currentseason car to handle the request 
+\begin{DoxyParams}{Parameters}
+{\em t} & Tyres to be added \\
+\hline
+{\em num} & Number of tyres added \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a5c5f22cb9232b88a53a4ffc324824aa1}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a34d5c432ee7e7e8a33a4e8099a2c751f}\label{classDepartmentOutput_a34d5c432ee7e7e8a33a4e8099a2c751f}} 
+\index{Department\+Output@{Department\+Output}!calculate\+Speed@{calculate\+Speed}}
+\index{calculate\+Speed@{calculate\+Speed}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{calculate\+Speed()}{calculateSpeed()}}
+{\footnotesize\ttfamily int Department\+Output\+::calculate\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the calculated speed calculated by running throught he list of decorators and adding all their speeds \begin{DoxyReturn}{Returns}
+int speed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_aadb72568edbdf571547ec48e9781237f}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}\label{classDepartmentOutput_ab20c9d559bca6ce8e6748dfac47c3f84}} 
+\index{Department\+Output@{Department\+Output}!clone@{clone}}
+\index{clone@{clone}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classCar}{Car}$\ast$ Department\+Output\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clone the part and return new cloned part \begin{DoxyReturn}{Returns}
+\hyperlink{classCar}{Car} pointer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCar_a5a54bbfe8e72022f4d9fdf6ecc990d99}{Car}.
+
+
+
+Implemented in \hyperlink{classAerodynamics_abbd7bb0e8186e3d86b8baf7a72aeb63e}{Aerodynamics}, \hyperlink{classChassis_a2700ee5437760643c7cad46e077dcbcd}{Chassis}, \hyperlink{classElectronics_a292164aedff12771f4f05af648a9fc70}{Electronics}, and \hyperlink{classEngine_a18a3b9d950e67a868420b79890ba1428}{Engine}.
+
+\mbox{\Hypertarget{classDepartmentOutput_aca95508fd9145baea4e7a32448fa653b}\label{classDepartmentOutput_aca95508fd9145baea4e7a32448fa653b}} 
+\index{Department\+Output@{Department\+Output}!current\+Tyre@{current\+Tyre}}
+\index{current\+Tyre@{current\+Tyre}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{current\+Tyre()}{currentTyre()}}
+{\footnotesize\ttfamily \hyperlink{classTyre}{Tyre} $\ast$ Department\+Output\+::current\+Tyre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the current tyre without removing it from queue \begin{DoxyReturn}{Returns}
+\hyperlink{classTyre}{Tyre} pointer 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_aadd6f69cf389b293a5e8a098ebc75f1d}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a5c2bbaa1979ecbbd06629440884966a0}\label{classDepartmentOutput_a5c2bbaa1979ecbbd06629440884966a0}} 
+\index{Department\+Output@{Department\+Output}!get\+Driver\+Name@{get\+Driver\+Name}}
+\index{get\+Driver\+Name@{get\+Driver\+Name}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Driver\+Name()}{getDriverName()}}
+{\footnotesize\ttfamily string Department\+Output\+::get\+Driver\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the drivers name,handle request method of chain of responisibility to get to the currentseason car to handle the request \begin{DoxyReturn}{Returns}
+string name 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a0192991111c42f7cba809cc9831cd5f3}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_ab12d572677cc6c3a4b32cc1c5894f54e}\label{classDepartmentOutput_ab12d572677cc6c3a4b32cc1c5894f54e}} 
+\index{Department\+Output@{Department\+Output}!get\+Next@{get\+Next}}
+\index{get\+Next@{get\+Next}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Next()}{getNext()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Department\+Output\+::get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns next decorator in list \begin{DoxyReturn}{Returns}
+\hyperlink{classCar}{Car} pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDepartmentOutput_ac1eac849b183dd78906a5b2a7217b8ef}\label{classDepartmentOutput_ac1eac849b183dd78906a5b2a7217b8ef}} 
+\index{Department\+Output@{Department\+Output}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily int Department\+Output\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the points from the driver of the car,handle request method of chain of responisibility to get to the currentseason car to handle the request \begin{DoxyReturn}{Returns}
+int points 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a0e0b71dc2b09be094ffb08e5b73c8ea2}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_af4807c0cdde8488cd922be5d15a0f59b}\label{classDepartmentOutput_af4807c0cdde8488cd922be5d15a0f59b}} 
+\index{Department\+Output@{Department\+Output}!get\+Race\+Time@{get\+Race\+Time}}
+\index{get\+Race\+Time@{get\+Race\+Time}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Race\+Time()}{getRaceTime()}}
+{\footnotesize\ttfamily int Department\+Output\+::get\+Race\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the race\+Time of the car,handle request method of chain of responisibility to get to the currentseason car to handle the request \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_ac30e13eba209c1ca3bba99bf6741094a}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}\label{classDepartmentOutput_a90caf8934a687d18b9855f19a421ecef}} 
+\index{Department\+Output@{Department\+Output}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Department\+Output\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return parts speed \begin{DoxyReturn}{Returns}
+int speed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a18e48b5cf9815216b8e82351d36b8d9f}{Car}.
+
+
+
+Reimplemented in \hyperlink{classAerodynamics_aeee4abded0da2a826af0f3a4c0cdf991}{Aerodynamics}, \hyperlink{classChassis_a095c63aa079ebd8d7fc04f238fd1e56c}{Chassis}, \hyperlink{classElectronics_a09912c940a0a8656d97f8597b766c0eb}{Electronics}, and \hyperlink{classEngine_a5f828ac1355f02d43f8bae90fbddb131}{Engine}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a9366794b5b64ed37cf37ed6443eecf01}\label{classDepartmentOutput_a9366794b5b64ed37cf37ed6443eecf01}} 
+\index{Department\+Output@{Department\+Output}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Department\+Output\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns type of part \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCar_ae502eb1c04753317ebdb759497fd030c}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a64f6b8afd2702b4d223c4cac0909b470}\label{classDepartmentOutput_a64f6b8afd2702b4d223c4cac0909b470}} 
+\index{Department\+Output@{Department\+Output}!increment\+Race\+Time@{increment\+Race\+Time}}
+\index{increment\+Race\+Time@{increment\+Race\+Time}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{increment\+Race\+Time()}{incrementRaceTime()}}
+{\footnotesize\ttfamily void Department\+Output\+::increment\+Race\+Time (\begin{DoxyParamCaption}\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Increase the racetime by rt,handle request method of chain of responisibility to get to the currentseason car to handle the request 
+\begin{DoxyParams}{Parameters}
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a3944276e317e680a756ac58e7bac6e6f}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a9c1846e268ea5e85eb623d8011f204f5}\label{classDepartmentOutput_a9c1846e268ea5e85eb623d8011f204f5}} 
+\index{Department\+Output@{Department\+Output}!pop\+Old\+Tyre@{pop\+Old\+Tyre}}
+\index{pop\+Old\+Tyre@{pop\+Old\+Tyre}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{pop\+Old\+Tyre()}{popOldTyre()}}
+{\footnotesize\ttfamily void Department\+Output\+::pop\+Old\+Tyre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Remove the current tyre from queue 
+
+Reimplemented from \hyperlink{classCar_a5859a9475be0c26341ca4f3acf23a2ea}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a8bd91d321113668938ecb8fb549d972c}\label{classDepartmentOutput_a8bd91d321113668938ecb8fb549d972c}} 
+\index{Department\+Output@{Department\+Output}!remove\+Part@{remove\+Part}}
+\index{remove\+Part@{remove\+Part}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{remove\+Part()}{removePart()}}
+{\footnotesize\ttfamily \hyperlink{classCar}{Car} $\ast$ Department\+Output\+::remove\+Part (\begin{DoxyParamCaption}\item[{string}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Remove a part from list of decorators may not remove a current or next season car, Removed by specifying part for removal 
+\begin{DoxyParams}{Parameters}
+{\em part} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The car object at front of decorator list 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCar_a54018ac7e84e79c8bfc1a8fba5e45b16}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_aa045362e5763d57a2c888b98c677773c}\label{classDepartmentOutput_aa045362e5763d57a2c888b98c677773c}} 
+\index{Department\+Output@{Department\+Output}!set\+Driver@{set\+Driver}}
+\index{set\+Driver@{set\+Driver}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{set\+Driver()}{setDriver()}}
+{\footnotesize\ttfamily void Department\+Output\+::set\+Driver (\begin{DoxyParamCaption}\item[{\hyperlink{classDriver}{Driver} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the driver of the car,handle request method of chain of responisibility to get to the currentseason car to handle the request 
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_ad7148bd1abe107ce2e2b134f78582c9d}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a99c1b2cf729b25bc2f1d48214019c678}\label{classDepartmentOutput_a99c1b2cf729b25bc2f1d48214019c678}} 
+\index{Department\+Output@{Department\+Output}!set\+Race\+Time@{set\+Race\+Time}}
+\index{set\+Race\+Time@{set\+Race\+Time}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{set\+Race\+Time()}{setRaceTime()}}
+{\footnotesize\ttfamily void Department\+Output\+::set\+Race\+Time (\begin{DoxyParamCaption}\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set the race\+Time of the car, handle request method of chain of responisibility to get to the currentseason car to handle the request 
+\begin{DoxyParams}{Parameters}
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCar_a72a79de673e860c1f177791bee87c529}{Car}.
+
+\mbox{\Hypertarget{classDepartmentOutput_a3c189e28c9d8899afafe3d6ee7d7602d}\label{classDepartmentOutput_a3c189e28c9d8899afafe3d6ee7d7602d}} 
+\index{Department\+Output@{Department\+Output}!simulate@{simulate}}
+\index{simulate@{simulate}!Department\+Output@{Department\+Output}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Department\+Output\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Help the driver increase performance,handle request method of chain of responisibility to get to the currentseason car to handle the request 
+
+Reimplemented from \hyperlink{classCar_af2532d9bbcda730f936f9633d8ee8d71}{Car}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car/\+Parts/Department\+Output.\+h\item 
+Car/\+Parts/Department\+Output.\+cpp\end{DoxyCompactItemize}

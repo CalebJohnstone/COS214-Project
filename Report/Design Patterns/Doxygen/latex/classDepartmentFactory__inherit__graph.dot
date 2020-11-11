@@ -1,0 +1,14 @@
+digraph "DepartmentFactory"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="DepartmentFactory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="AerodynamicsFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAerodynamicsFactory.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ChassisFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classChassisFactory.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ElectronicsFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classElectronicsFactory.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="EngineFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEngineFactory.html"];
+}
